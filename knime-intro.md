@@ -3,3 +3,5 @@ KNIME, the Konstanz Information Miner, is an open source data analytics, reporti
 Since 2006, KNIME has been used in pharmaceutical research,[1] but is also used in other areas like CRM customer data analysis, business intelligence and financial data analysis.
 
 <hr>
+
+Knime is a java open-source, cross-platform application which name means "Konstanz Information Miner". It is actually used extensively for data mining, data analysis and optimization. It can be downloaded as the core application itself(Knime Desktop), or the whole SDK which is based on Eclipse Helios. The knime software can also work with different kinds of extensions which are embedded into the "/downloads/extensions" tabs of the website.
