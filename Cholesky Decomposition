@@ -142,6 +142,49 @@ Eigenvectors:
 
 
 
+
+--------------------------------------------------------------------------------
+
+
+Cholesky Decomposition
+
+
+
+
+
+
+
+
+  
+
+
+
+
+--------------------------------------------------------------------------------
+Jacobi Method
+
+
+
+
+
+
+D = I =D-1
+
+
+This is the Identity matrix I  However, this is not always the case.
+
+
+Use three iterations of this method , with initial guess {0,0,0} to obtain a numerical solution to the system.
+
+  
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+
  
 
  
