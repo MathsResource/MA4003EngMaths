@@ -1,11 +1,107 @@
 MA4003 Week 13 Cholesky /Jacobi
 
-a2=1a=1				b2+c2=13 \therefore c2=4c=2
-ab=1b=3				bd+ce=7	\therefore e=2
-ad=1d=1				d2+e2+f2=6		\therefore		f=1
+
+\begin{itemize}
+\item a^2=1 \therefore a=1	
+\item ab=3 b=3
+\item ad=1 d=1	
+\item b^2+c^2=13 \therefore c^2=4 \thefore c=^2
+\item bd+ce=7	\therefore e=^2
+\item d^2+e^2+f^2=6		\therefore		f=1
+\end{itemize}
 
 	       
 %=======================================================================%
+
+
+MA4003                                          
+ Linear Algebra                            
+Cholesky Decomposition
+
+%=========================================%
+
+\begin{itemize}
+\item a,b,c,d,e,f are real number coefficients
+\end{itemize}
+
+\[ 
+L^T = 
+\begin{array}{c c c}
+a &  0 & 0 \\ 
+b & c & 0 \\ 
+d &  e & f \\ 
+\end{array}  
+\]
+
+ 
+
+\[ 
+L^T = 
+ 
+\begin{array}{c c c}
+a &  b & d \\ 
+0 & c & e \\ 
+0 &  0 & f \\ 
+\end{array}  
+
+\]
+
+%=============================================================% 
+
+A = L \times L^T  
+
+
+ \[ 
+L^T = 
+\begin{array}{c c c}
+a &  0 & 0 \\ 
+b & c & 0 \\ 
+d &  e & f \\ 
+\end{array}  
+ 
+\begin{array}{c c c}
+a &  b & d \\ 
+0 & c & e \\ 
+0 &  0 & f \\ 
+\end{array}  
+
+= 
+
+\begin{array}{c c c}
+a^2 &  ab & ad \\ 
+0 & b^2+c^2 & e \\ 
+0 &  0 & d^2 +e^2 + f^2 \\ 
+\end{array}  
+\]
+
+%=============================================================% 
+
+ 
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
 
   
 
