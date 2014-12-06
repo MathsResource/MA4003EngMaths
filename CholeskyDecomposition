@@ -1,5 +1,27 @@
-MA4003 Week 13 Cholesky /Jacobi
+%MA4003 Week 13 Cholesky /Jacobi
 
+Find the Cholesky decomposition ($A = LLT$
+) of the matrix 5
+\[
+A =
+\left(
+
+4 & −2 & 0 \\
+−2 &2 & 1 \\
+0 & 1 & 20\\
+
+\right)
+\]
+and hence solve the system of equations Ax = b where 3
+b =
+
+−2 \\
+0 \\
+−8 \\
+\right)
+\]
+
+\newpage
 
 \begin{itemize}
 \item a^2=1 \therefore a=1	
