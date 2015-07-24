@@ -7,3 +7,281 @@ Laplace Transforms (Eng. Maths 3)
 \item $\mathcal{L}[sin(ax)] = \frac{a^2}{s^2 + a^2}$
 \item $\mathcal{L}[cos(ax)] = \frac{s^2}{s^2 + a^2}$
 \end{itemize}
+
+
+\section{Question 1}
+Choose appropriate Laplace Transform from tables
+%----------------------------------------%
+\subsection{2011 Yellow}
+$\mathcal{L}[cos3t + sin3t]$ = $\mathcal{L}[cos3t]$+ $\mathcal{L}[sin3t]$\\
+Answer : \[ G(s) = \frac{s}{s^2+9}+\frac{3}{s^2+9}= \frac{s+3}{s^2+9}\]
+%----------------------------------------%
+\subsection{2011 Green}
+$\mathcal{L}[cos32 + sin2t]$ = $\mathcal{L}[cos2t]$+ $\mathcal{L}[sin2t]$ \\
+
+Answer : \[ G(s) = \frac{s}{s^2+4}+\frac{2}{s^2+4}= \frac{s+2}{s^2+4}\]
+%----------------------------------------%
+
+\subsection{2010 Yellow}
+
+$\mathcal{L}[cosh2t + sinh2t]$ = $\mathcal{L}[cosh2t]$- $\mathcal{L}[sinh2t]$\\
+Answer : \[ G(s) = \frac{s}{s^2-4}-\frac{2}{s^2-4}= \frac{s-2}{s^2-4}\]\\
+This doesnt correspond to any of the answers! (Simplify it)\\
+Answer : \[ G(s) = \frac{s-2}{s^2-4} = \frac{s-2}{(s-2)(s+2)} = \frac{1}{s+2}
+
+%----------------------------------------%
+\subsection{2010 Green}
+
+%----------------------------------------%
+%-----------------------------------------------------------------------------%
+\section{Question 2}
+%----------------------------------------%
+\subsection{Q2 2011 Yellow}
+$\mathcal{L}[e^{4t}(5t-1)]$ = $5\mathcal{L}[e^{4t}t]$ - $\mathcal{L}[e^{4t}]$
+%----------------------------------------%
+\subsection{Q2 2011 Green}
+$\mathcal{L}[e^{-5t}(2t+1)]$ = $2\mathcal{L}[e^{-5t}t]$ + $\mathcal{L}[e^{-5t}]$
+%----------------------------------------%
+\subsection{Q2 2010 Yellow}
+
+$\mathcal{L}[e^{3t}(t+1)]$ = $5\mathcal{L}[e^{3t}t]$ + $\mathcal{L}[e^{3t}]$
+%----------------------------------------%
+\subsection{Q2 2010 Green}
+
+$\mathcal{L}[e^{-2t}(t+2)]$ = $5\mathcal{L}[e^{-2t}t]$ + 2$\mathcal{L}[e^{-2t}]$
+
+%----------------------------------------%
+%-----------------------------------------------------------------------------%
+\section{Question 3}
+%----------------------------------------%
+\subsection{2011 Yellow}
+$g(t) = sin(2t - 6)u_3(t)$ is in form $f(t-a)u_a(t)$ , with $a=3$ \\
+If $f(t-a) = f(t-3) = sin(2t - 6)$ then $f(t)= sin(2t)$ \\
+$\mathcal{L}[f(t-a)u_a(t)]$ =$e^{-as}F(s)$ \\
+$F(s)$ is simply $\mathcal{L}[f(t)]$\\
+%----------------------------------------%
+\subsection{2011 Green}
+$g(t) = cos(t-2)u_2(t)$ is in form $f(t-a)u_a(t)$ , with $a=2$ \\
+If $f(t-a) = f(t-2) = cos(t-2)$ then $f(t)= cos(t)$ \\
+$\mathcal{L}[f(t-a)u_a(t)]$ =$e^{-as}F(s)$ \\
+$F(s)$ is simply $\mathcal{L}[f(t)]$\\
+%----------------------------------------%
+\subsection{2010 Yellow}
+$g(t) = cos(t-3)u_3(t)$ is in form $f(t-a)u_a(t)$ , with $a=3$ \\
+If $f(t-a) = f(t-3) = cos(t-3)$ then $f(t)= cos(t)$ \\
+$\mathcal{L}[f(t-a)u_a(t)]$ =$e^{-as}F(s)$ \\
+$F(s)$ is simply $\mathcal{L}[f(t)]$\\
+%----------------------------------------%
+\subsection{2010 Green}
+$g(t) = sin(2t - 2)u_1(t)$ is in form $f(t-a)u_a(t)$ , with $a=1$ \\
+If $f(t-a) = f(t-1) = sin(2t - 2)$ then $f(t)= sin(2t)$ \\
+$\mathcal{L}[f(t-a)u_a(t)]$ =$e^{-as}F(s)$ \\
+$F(s)$ is simply $\mathcal{L}[f(t)]$\\
+%----------------------------------------%
+
+%-----------------------------------------------------------------------------%
+\section{Question 4}
+%----------------------------------------%
+\subsection{Q4 2011 Yellow}
+
+\begin{itemize}
+\item Find the inverse Laplace transform of 
+\[ G(s) = e^{-2s}\frac{1}{s^2} \]
+\item Can consider G(s) in the following form , with $a=2$
+\[ G(s) = e^{-as}F(s) \]
+\item The inverse of this is
+\[ g(t) = f(t-a) u_a(t) \]
+\item Table Entry 2
+\[ F(s) = 1/s^2 \arrow f(t) = t \] 
+\item Identify $f(t-a)$
+\[ \therefore f(t-a) = f(t-2) = t-2 \]
+\item Answer
+\[ g(t) = f(t-a)u_a(t) = (t-2)u_2(t) \]
+\end{itemize}
+%----------------------------------------%
+\subsection{Q4 2011 Green}
+\begin{itemize}
+\item Find the inverse Laplace transform of 
+\[ G(s) = \frac{s}{s^2 + 4s + 4} \]
+\item Factorise the denominator?  $(s+2)^2$
+\item
+\[ G(s) = \frac{s}{(s+2)^2} \]
+\item We can express the numerator as follows:  $s = (s+2)-2$
+\item
+\[ G(s) = \frac{s}{(s+2)^2} =  \frac{s+2}{(s+2)^2} - \frac{2}{(s+2)^2} \]
+\item The first term simplifies to something simple. 
+\item The second term can be solved using Table Entry 5, with $a=-1$ and $n=1$.
+\item
+\[ g(t)  = e{-2t} - e{-2t}t \]
+\end{itemize}
+
+%----------------------------------------%
+\subsection{Q4 2010 Yellow}
+
+\begin{itemize}
+\item Find the inverse Laplace transform of 
+\[ G(s) = \frac{s}{s^2 -2s + 1} \]
+\item Factorise the denominator?  $(s-1)^2$
+\item
+\[ G(s) = \frac{s}{(s-1)^2} \]
+\item We can express the numerator as follows:  $s = (s-1)+1$
+\item
+\[ G(s) = \frac{s}{(s-1)^2} =  \frac{s-1}{(s-1)^2} + \frac{1}{(s-1)^2} \]
+\item The first term simplifies to something simple. 
+\item The second term can be solved using Table Entry 5, with $a=1$ and $n=1$.
+\item Answer:
+\[ g(t)  = e{t} + e{t}t = e{t}(1+t)  \]
+
+\end{itemize}
+%----------------------------------------%
+\subsection{Q4 2010 Green}
+\begin{itemize}
+\item Find the inverse Laplace transform of 
+\[ G(s) = \frac{s}{s^2 -2s + 1} \]
+\item Factorise the denominator?  $(s-1)^2$
+\item
+\[ G(s) = \frac{s}{(s-1)^2} \]
+\item We can express the numerator as follows:  $s = (s-1)+1$
+\item
+\[ G(s) = \frac{s}{(s-1)^2} =  \frac{s-1}{(s-1)^2} + \frac{1}{(s-1)^2} \]
+\item The first term simplifies to something simple. 
+\item The second term can be solved using Table Entry 5, with $a=1$ and $n=1$.
+\item Answer:
+\[ g(t)  = e{t} + e{t}t = e{t}(1+t)  \]
+
+\end{itemize}
+
+
+%-------------------------------------------------------------------------%
+\section{Question 5}
+%----------------------------------------%
+\subsection{Q5 2011 Yellow}
+\begin{itemize}
+\item Find the inverse Laplace transform of 
+\[ G(s) = \frac{s-1}{s^2 - 2s + 2} \]
+\item Factorise the denominator?  not this time. ( no obvious roots)
+\item
+\[ G(s) = \frac{s-1}{s^2 + 2s + 2} = \frac{s-1}{(s-1)^2 + 1} \]
+\item We can express the transform in following form:  $F(s-a)$ where $a=1$ 
+\item Necessarily \[ F(s) = = \frac{s}{s^2 + 1} \]
+\item The Inverse Laplace transform of this: $f(t) = cos(t)$
+\item The overal Inverse Laplace transform of this: \[g(t) = e^{at}f(t) = e^tcos(t)\]
+\end{itemize}
+
+%----------------------------------------%
+\subsection{Q5 2011 Green}
+\begin{itemize}
+\item Find the inverse Laplace transform of 
+\[ G(s) = \frac{s-2}{s^2 + s -6} \]
+\item Factorise the denominator?  $(s-2)(s+3)$
+\item Simplification of the expression is possible
+\[ G(s) = \frac{s-2}{(s-2)(s+3)} = \frac{1}{s+3} \]
+\item The inverse Laplace Transform can be computed using Table Entry 4
+\[ g(t)  = e{-3t}  \]
+
+\end{itemize}
+%----------------------------------------%
+\subsection{Q5 2010 Yellow}
+\begin{itemize}
+\item Find the inverse Laplace transform of 
+\[ G(s) = \frac{s-2}{s^2 + s + 6} \]
+\item Factorise the denominator?  $(s+2)(s+3)$
+\item Can arrange expression in a way that Table Entries 8 and 9 can be used intuitively ($a=-3, b=-2$)
+\[ G(s) = \frac{s-2}{(s+2)(s+3)} = \left(\frac{s}{(s+2)(s+3)} \right)-2\left(\frac{1}{(s+2)(s+3)}\right) \]
+\{itemize}
+%----------------------------------------%
+\subsection{Q5 2010 Green}
+\begin{itemize}
+\item Find the inverse Laplace transform of 
+\[ G(s) = \frac{s-2}{s^2 - s - 6} \]
+\item Factorise the denominator?  $(s+2)(s-3)$
+\item Can arrange expression in a way that Table Entries 8 and 9 can be used intuitively ($a=3, b=-2$)
+\[ G(s) = \frac{s-2}{(s+2)(s-3)} = \left(\frac{s}{(s+2)(s-3)} \right)-2\left(\frac{1}{(s+2)(s-3)}\right) \]
+\{itemize}
+%----------------------------------------%
+\section{Question 6}
+
+\subsection{Q6 2011 Yellow}
+\begin{itemize}
+\item $f_1(t)=t^2$ : Laplace Transform $F_1(s)={2 \over s^3}$
+\item $f_2(t)=t^2$ : Laplace Transform $F_2(s)={2 \over s^3}$
+\item $\mathcal{L}[g(t)] = F_1(s)\times F_2(s) = {4 \over s^6}$
+\item $g(t)$ = $\mathcal{L}^{-1}[{4 \over s^6}]$
+\item Using Table Entry 3: $n$ is necessarily $5$
+\end{itemize}
+
+%----------------------------------------%
+\subsection{Q6 2011 Green}
+\begin{itemize}
+\item $f_1(t)=e^{-t}$ : Laplace Transform $F_1(s)={1 \over s+1}$
+\item $f_2(t)=e^{-t}$ : Laplace Transform $F_2(s)={1 \over s+1}$
+\item $\mathcal{L}[g(t)] = F_1(s)\times F_2(s) = {1 \over (s+1)^2}$
+\item $g(t)$ = $\mathcal{L}^{-1}[{1 \over (s+1)^2}]$
+\item Using Table Entry 4: $n$ is necessarily $1$ , and $a=-1$
+\item Answer $g(t) = te^{-t}$
+\end{itemize}
+
+%----------------------------------------%
+\subsection{Q6 2010 Yellow}
+
+\begin{itemize}
+\item $f_1(t)=t$ : Laplace Transform $F_1(s)={1 \over s^2}$
+\item $f_2(t)=t^2$ : Laplace Transform $F_2(s)={2 \over s^3}$
+\item $\mathcal{L}[g(t)] = F_1(s)\times F_2(s) = {2 \over s^5}$
+\item $g(t)$ = $\mathcal{L}^{-1}[{2 \over s^5}]$
+\item Using Table Entry 3: $n$ is necessarily $4$
+\item Remember to use a scaling coefficient $k$ in conjunction with the formula.
+\item $G(s) = k { 2 \over s^{4+1}}$
+\end{itemize}
+\subsection{2010 Green}
+%----------------------------------------%
+\newpage
+%-------------------------------------------------------------------------%
+\section{Question 7}
+
+\begin{itemize}
+\item The period of a function $p$ may be identified by the following term : $f(t) = f(t+p)$
+\item Period of a function is inversely proportional to the coefficient.
+\item If $f(x)$ has period $p$ , then $f(2x)$ has period $p/2$
+\item For older questions a periodic trigonometric function of form $trig(kx)$ has period $2\pi/k$
+\end{itemize}
+%----------------------------------------%
+\subsection{Q7 2011 Yellow}
+\begin{itemize}
+\item If $f(x)$ has period $2$ , then $f(2x)$ has period $1$
+\end{itemize}
+%----------------------------------------%
+\subsection{Q7 2011 Green}
+\begin{itemize}
+\item If $f(x)$ has period $2\pi$ , then $f(2x)$ has period $\pi$
+\end{itemize}
+%----------------------------------------%
+\subsection{Q7 2010 Yellow}
+\begin{itemize}
+\item  $trig(kx)$ $k$= ${pi\over2}$
+\item  $p$ = $\frac{2\pi}{pi\over2}$ =4
+\end{itemize}
+%----------------------------------------%
+\subsection{Q7 2010 Green}
+\begin{itemize}
+\item  $trig(kx)$ $k$= ${1\over2}$
+\item  $p$ = $\frac{2\pi}{1\over2}$ = $4\pi$
+\end{itemize}
+%----------------------------------------%
+\newpage
+\subsection{Q8 2010 Green}
+\begin{itemize}
+\item $f(x) = x - x^5$ 
+\item $f(-1) = (-1) - (-1)^5$ = 0 
+\item $f(1) = (1) - (1)^5$ = 0 
+\item use a different number instead
+\item $f(-1/2) = (-1/2) - (-1/2)^5$ = 0 
+\item $f(1/2) = (1/2) - (1/2)^5$ = 0 
+\item $f(x)$ is odd
+
+\item $g(x) = x^2 sin x$
+\item $g(-1) = (-1^2) \times sin(-1)$ 
+\item $g(1) = (1^2) \times sin(-1)$ 
+\item $g(x)$ is also odd
+\end{itemize}
+%----------------------------------------%
