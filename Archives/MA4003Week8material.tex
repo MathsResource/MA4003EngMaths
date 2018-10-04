@@ -1,0 +1,497 @@
+
+%======================================================================================================== %
+
+
+sin(3\pi t) = sin(3\pi (t-2) + 6 \pi )
+
+
+sin(A + B) = sin (A)Cos(B) + cos(A)Sin(B) 
+
+
+sin(3\pi (t-2) + 6\pi ) = sin(3\pi (t-2))cos(6\pi ) + cos(3\pi(t-1))sin(6 \pi )
+
+
+sin(3\pi) = 0              cos(6\pi) = 1
+
+
+sin(3(t-2) + 6) = sin(3(t-2))
+
+
+f(t) = sin (3t) +u2(t)sin (3(t-2))
+
+
+F(s) =(3)2s2+ (3)2-e-2s(3)2s2+ (3)2
+
+
+F(s) =(1-e-2s)92s2+ 92
+
+ %======================================================================================================== %
+ 
+
+ 
+
+Autumn 0607 Question 1aiii : Periodic function
+
+ 
+
+Period of function is 2
+
+ 
+
+Base function (b (t))
+
+ 
+
+Base function repeated infinitelyf(t) = f(t+p)
+
+
+Expression can be re-arranged as follows:
+
+ 
+
+b(t) =u0(t) +u1(t) -2u2(t) 
+
+ 
+
+Laplace transform of base function
+
+ 
+
+B(s) =1s+e-ss-2e-2ss 
+
+ 
+
+ 
+
+Required Laplace transform is derived from base function as follows
+
+ 
+
+ 
+
+G(s) =11-e-psB(s) 
+
+ 
+
+G(s) =11-e-2s1+e-s-2e-2ss 
+
+ 
+
+ 
+
+ 
+
+Let     x =e-s
+
+ 
+
+        x2=(e-s)2=e-2s
+
+ 
+
+G(s) =11-x21+ x -2x2s
+
+ 
+
+G(s) =1x2-12x2-x-1s
+
+ 
+
+2x2-x-1 = (2x-1)(x+1)
+
+x2-1 = (x-1)(x+1)
+
+ 
+
+ 
+
+G(s) =1x-12x-1s 
+
+ 
+
+G(s) =2e-s-1s(1-es)
+%======================================================================================================== %
+
+Week 8
+
+
+Inverse Laplace transforms
+
+
+Q1 - a - i
+
+
+Q1 - a - ii
+
+
+Q1 - a - iii
+
+
+Inverse Laplace transforms
+
+
+Q1 - b - i
+
+
+Q1 - b - ii
+
+
+Q1 - b - iii
+
+Inverse Laplace transforms
+
+
+
+Q2 - a
+
+Solving Differential equations using Laplace transforms
+
+
+Q2 - b 
+
+Solving Integral equations using Laplace transforms
+
+
+
+base function B(s)
+
+
+Base function repeated infinitelyf(t) = f(t+p)
+
+
+11-e-ps
+
+
+G(s)  = \frac{B(s)}{}
+
+
+ 
+
+Part 4 Solving ODEs using Laplace Transforms 
+
+ 
+
+d2ydt2+dydt+ y = 1 + t 
+
+ 
+
+Alternative notation
+
+ 
+
+d2ydt2y(t)                dydty(t)
+
+
+Initial Conditions are often (but not always) zero    y(0) = 0y(0) = 0
+
+ 
+
+ 
+
+y+y+ y = 1 + t
+
+ 
+
+L[y] =s2Y(s) - sy(0)-y(0)            note the initial conditions. L[y] =s2Y(s)
+
+ 
+
+L[y] = sY(s) - y(0)                           note the initial conditions. L[y] = sY(s) 
+
+ 
+
+L[ y] = Y(s)
+
+ 
+
+Ld2ydt2+dydt+ y=(s2+s+1)Y(s)    Quadratic Term multiplied by Y(s)
+
+
+ 
+
+ 
+
+
+
+f(t) =u0(t) -u1(t)[sin (3t)] = sin (3t) -u1(t)sin (3t)
+
+
+sin(3t) = sin(3(t-1) + 3)
+
+
+sin(A + B) = sin (A)Cos(B) + cos(A)Sin(B) 
+
+
+sin(3(t-1) + 3) = sin(3(t-1))cos(3) + cos(3(t-1))sin(3)
+
+
+sin(3) = 0              cos(3) = -1
+
+
+sin(3(t-1) + 3) = -sin(3(t-1))
+
+
+f(t) = sin (3t) +u1(t)sin (3(t-1))
+
+
+F(s) =(3)2s2+ (3)2+e-s(3)2s2+ (3)2
+
+
+F(s) =(1+e-s)92s2+ 92
+
+
+ 
+
+End of Year Exam  2009 Question 1bi
+
+
+Find the inverse laplace transform of G(s)
+
+
+G(s) =2s-4s2- s - 6
+
+
+s2- s - 6 = (s-3)(s+2)
+
+
+G(s) =2s(s-2)(s+3)-4(s-2)(s+3)
+
+
+entry no 12 and 13 with a =3 and b =  -2
+
+
+
+End of Year Exam  2009 Question 1b(ii)
+
+Find the inverse laplace transform of G(s)
+
+
+G(s) =e-4ss2- 3s
+
+
+
+G(s)in forme-asF(s)witha = 4.
+
+
+
+F(s) =1(s)(s-3)
+
+
+
+f(t) =13[e3t- 1 ]
+
+
+End of Year Exam  2008 Question 1b(iii)
+
+
+Find the inverse laplace transform of G(s)
+
+
+G(s) =tan-1(s)
+
+
+tan-1(s) ds
+
+
+%======================================================================================================== %
+
+\newpage 
+Example 1
+
+Find g(t), the inverse Laplace transform of G(s) =2s3
+
+Consider this in form G(s) = -F(s)
+
+Necessarily 
+
+ 
+
+Finding the inverse Laplace transform of F(s)
+
+ 
+
+f(t) = t
+
+ 
+
+
+g(t) = tf(t) =t2
+
+ 
+
+Summary:
+
+∙       Given G(s), we consider it in form G(s) =-F(s)
+
+∙       We negate G(s) and integrate it to find F(s).
+
+∙       We get the inverse laplace transform of F(s) to find f(t).
+
+∙       We multiply f(t) by ‘t’ to find g(t)
+
+ 
+%======================================================================================================== %
+
+Example 2
+
+Find the inverse Laplace transform of lnss-1
+
+ 
+
+To solve this we use a same approach to the one in the previous example, but in reverse.
+
+ 
+
+∙       We consider the given equation in form F(s).
+
+∙       We negate F(s) and differentiate it to find G(s).
+
+∙       We get the inverse Laplace transform of G(s) , yielding g(t).
+
+∙       We divide g(t) by ‘t’ to find f(t)
+
+ 
+
+ F(s) = lnss-1= ln(s) - ln(s-1)           
+
+G(s) =-F(s) = -dds( ln(s)) +dds(ln(s-1))
+
+
+G(s) =dds( ln(s-1)) -dds(ln(s))
+
+
+G(s) =1s-1-1s
+
+
+g(t) =et- 1
+
+
+f(t) =g(t)t=et- 1t
+
+
+
+ 
+
+G(s) = lns2s2-1
+
+
+ lns2s2-1=ln(s2) -ln(s2-1)
+
+
+ln(s2) = 2ln(s)
+
+
+
+dds2ln(s) =2s
+
+
+
+To compute  ddsln(s2- 1), apply the chain rule.
+
+
+
+ddsln(s2- 1) = 2s1s2-1 
+
+
+ F(s) =2ss2-1-2s
+
+
+
+ g(t) = 2 cos(t) -2
+
+
+f(t) =g(t)t=2 cos(t) -2t
+%======================================================================================================== %
+
+
+Laplace Question 1bii
+
+ 
+
+ 
+
+k(s-a)(s-b)=ka-bs-a+-ka-bs-b
+
+ 
+
+ 
+
+s(s-a)(s-b)=a+ka-bs-a+-b-ka-bs-b
+
+%======================================================================================================== %
+\subsection*{Example 4}
+Find the inverse Laplace transform of  F(s)
+
+
+\[ F(s) =tan-1(s)\]
+
+
+G(s) =-F(s) = -ddstan-1(s)
+
+
+G(s) =-1s2-1
+
+
+g(t) = -sin(t)
+
+
+f(t) =g(t)t=-sin(t)t
+
+ 
+
+\newpage 
+
+Using Laplace transforms to solve integral equations#
+
+ 
+
+ y(t) = 1+t+0tcos(t-u).y(u)du
+
+ 
+
+L[y(t)] = Y(s)
+
+ 
+
+L[1+t] =1s+1s2=s+1s2
+
+ 
+
+L[0tcos(t-u).y(u)du] =L[cos(t)]L[y(t)] =s Y(s)s2+1
+
+ 
+
+Y(s) =s+1s2+s Y(s)s2+1
+
+ 
+
+(s2+1) Y(s)s2+1-s Y(s)s2+1=s+1s2
+
+ 
+
+(s^2-s +1) Y(s)s2+1=s+1s2
+
+ 
+
+ 
+
+
+ \[ y(t) = cos(t)+ 20tsin(t-u).y(u)du\]
+
+
+ 
+
+ 
+
+L[y(t)] = Y(s)
+
+ 
+
+L[cos(t)] =ss2-1
+
+ 
+
+L[0tcos(t-u).y(u)du] =L[cos(t)]L[y(t)] =s Y(s)s2+1
+
+
+\end{document}

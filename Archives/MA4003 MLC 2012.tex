@@ -1,0 +1,343 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+%\usepackage[dvips]{graphicx}
+%\usepackage{natbib}
+%\bibliographystyle{chicago}
+%\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+%\setmargins{3.0cm}{2.5cm}{15.5 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+%\renewcommand{\baselinestretch}{1.5}
+%\pagenumbering{arabic}
+%\theoremstyle{plain}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{ill}[theorem]{Example}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{conjecture}[theorem]{Conjecture}
+%\newtheorem{axiom}{Axiom}
+%\theoremstyle{definition}
+%\newtheorem{definition}{Definition}[section]
+%\newtheorem{notation}{Notation}
+%\theoremstyle{remark}
+%\newtheorem{remark}{Remark}[section]
+%\newtheorem{example}{Example}[section]
+%\renewcommand{\thenotation}{}
+%\renewcommand{\thetable}{\thesection.\arabic{table}}
+%\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+%\title{Research notes: linear mixed effects models}
+%\author{ } \date{ }
+
+
+\begin{document}
+\author{Kevin O'Brien}
+\title{Spring 2011}
+
+\addcontentsline{toc}{section}{Bibliography}
+\newpage
+\section*{Question 6}
+{\Large
+\[ A = \left(
+\begin{array}{ccc}
+1 & 1 & 0 \\
+0 & 0 & 1 \\
+0 & -2 & -3
+\end{array} \right) \]
+\begin{itemize}
+\item Last Class - We found the Eigenvalues of A
+\item Characteristic Equation $(\lambda - 1)(\lambda + 1)(\lambda + 2)=0$
+\item Eigenvalues $\lambda = \{-1,-2,1\}$
+\item To find Eigenspaces
+\item (Tutorial 6 Question 5 is a good example for this question)
+\end{itemize}
+
+
+\[ A = \left(
+\begin{array}{ccc}
+1 & -1/3 & 0 \\
+0 & 2/3 & 1 \\
+0 & -2/3 & -3
+\end{array} \right) \]
+
+\newpage
+\begin{itemize}
+\item Find the Eigenspaces :
+ Solve $(\lambda I -A)e=0$
+\item $(\lambda I -A)$ is computed below. First $\lambda =-2$
+
+\[
+\left(
+\begin{array}{ccc}
+-2 & 0  & 0  \\
+ 0 & -2  & 0  \\
+ 0 &  0 & -2
+\end{array}
+\right) -
+\left(
+\begin{array}{ccc}
+1 & 1  & 0  \\
+ 0 & 0  & 1  \\
+ 0 &  -2 & -3
+\end{array}
+\right) = \left(\begin{array}{ccc}
+-3 & -1 & 0 \\
+0 & -2 & -1 \\
+0 & 2 & 1
+\end{array} \right)\]
+\end{itemize}
+
+\newpage
+{\Large
+\begin{itemize}
+\item The Eigenspace weightings are the solutions to the following. (you can let $e_1$ = 1, then re-weight if necessary)
+
+\[\left(\begin{array}{ccc}
+-3 & -1 & 0 \\
+0 & -2 & -1 \\
+0 & 2 & 1
+\end{array} \right)
+\left(\begin{array}{c}
+e_1 \\
+e_2 \\
+e_3
+\end{array} \right) = \left(\begin{array}{c}
+0 \\
+0 \\
+0
+\end{array} \right)\]
+\item The solution is $e_1=1$, $e_2=-3$ $e_3=6$
+
+\item For $\lambda =-1$ and $\lambda =1$. The matrices are
+
+\[\left(\begin{array}{ccc}
+-3 & -1 & 0 \\
+0 & -2 & -1 \\
+0 & 2 & 1
+\end{array} \right) \left(\begin{array}{c}
+e_1 \\
+e_2 \\
+e_3
+\end{array} \right) = \left(\begin{array}{c}
+0 \\
+0 \\
+0
+\end{array} \right)\]
+
+\[
+\left(\begin{array}{ccc}
+-3 & -1 & 0 \\
+0 & -2 & -1 \\
+0 & 2 & 1
+\end{array} \right)\left(\begin{array}{c}
+e_1 \\
+e_2 \\
+e_3
+\end{array} \right) = \left(\begin{array}{c}
+0 \\
+0 \\
+0
+\end{array} \right)\]
+
+\item The P matrix is therefore
+\[
+\left(\begin{array}{ccc}
+1 & -1 & 1 \\
+-3 & 2 & 0 \\
+6 & -2 & 0
+\end{array} \right) \]
+\end{itemize}
+}
+
+
+
+
+\newpage
+%----------------------------------- %
+{\Large
+\begin{itemize}
+
+\item Normalising the columns
+\[
+\left(\begin{array}{ccc}
+1/ \sqrt{46} & -1/\sqrt{9} & 1/\sqrt{1} \\
+-3/ \sqrt{46} & 2/\sqrt{9} & 0/\sqrt{1} \\
+6/ \sqrt{46} & -2/\sqrt{9} & 0/\sqrt{1} \\
+\end{array} \right)=
+\left(\begin{array}{ccc}
+0.147 & -0.333 & 1 \\
+-0.442 & 0.666 & 0 \\
+0.885 & -0.666 & 0
+\end{array} \right) \]
+
+\item Normalization : divide each element by magnitude of column vector ($ \sqrt{1^2 +(-3)^2 +6^2} =\sqrt{46}$)
+
+\end{itemize}
+}
+
+\newpage
+{\Large
+
+\[ \left(
+  \begin{array}{c}
+    \dot{x}_1 \\
+    \dot{x}_2 \\
+    \dot{x}_3 \\
+  \end{array}
+\right)\left(
+\begin{array}{ccc}
+1 &1 &0\\
+0 &0& 1\\
+0 &-2& -3\\
+ \end{array}
+       \right)
+        \left( \begin{array}{c}
+    x_1 \\
+    x_2 \\
+    x_3 \\
+  \end{array}
+\right)\]
+
+Boundary conditions
+
+\[ X(0) = \left( \begin{array}{c}
+    1 \\
+    1 \\
+    0 \\
+  \end{array}
+\right)\]
+
+Linear Transformation
+\[ \left(
+  \begin{array}{c}
+    x_1 \\
+    x_2 \\
+    x_3 \\
+  \end{array}
+\right)\left(
+\begin{array}{ccc}
+\left(\begin{array}{ccc}
+1/ \sqrt{46} & -1/3 & 1 \\
+-3/ \sqrt{46} & 2/3 & 0 \\
+6/ \sqrt{46} & -2/3 & 0 \\
+\end{array} \right)
+ \end{array}
+       \right)
+        \left( \begin{array}{c}
+    \hat{x}_1 \\
+    \hat{x}_2 \\
+    \hat{x}_3 \\
+  \end{array}
+\right)\]
+
+
+}
+\newpage
+
+{\Large
+\begin{itemize}
+\item Let $\|A\|$ represent the norm of A.
+\item The condition number is defined as $\|A\| \times \|A^{-1}\| $ 
+\item Condition number is the measure of how well  conditioned a matrix is. The smaller the value of $\kappa(A)$, the more accurate the solution of Ax=b
+\item Inverse of A found yesterday, using Elementary Row Operations.
+\item Can quickly compute the inverse of L and U by the same method.
+\item Recall $A^{-1} = (LU)^{-1} = U^{-1}L^{-1}$
+\end{itemize}
+
+
+\[A = \left(\begin{array}{ccc}
+1&-3&1\\
+2&-5&4\\
+2&-2&11\\
+\end{array}\right) \qquad A^{-1}=\left(\begin{array}{ccc}
+-47	&	31	&	-7	\\
+-14	&	9	&	-2	\\
+6	&	-4	&	1	\\
+\end{array}\right)\]
+
+\begin{itemize}
+\item $\|A\| = \mbox{Max} \{(1+|-3|+1, 2+|-5|+4, 2+|-2|+11  \} = \mbox{max} \{5,11,15 \}  = 15$
+\item $\|A^-1\| = \mbox{Max} \{(|-47|+ 31 + |-7|, |-14|+ 9 +|-2|, 6+|-4|+1  \} = \mbox{max} \{85,25,11 \} $
+\item $\kappa(A) = 15 \times 85 = 1275$
+\end{itemize}
+}
+%----------------------------------------------------%
+
+{\Large
+\section*{Question 4}
+\[a_o + a_1x + a_2x^2 = \alpha_1(1+2x) + \alpha_2(2x+x^2)+\alpha_3(4+2x-3X^2)\]
+
+\[=(\alpha_1+4\alpha_3) + (2\alpha_1 + 2\alpha_2 + 2\alpha_3)x + (\alpha_2-3\alpha_3)x^2\]
+
+\begin{itemize}
+\item $a_o =  \alpha_1+4\alpha_3$
+\item $a_1 = 2\alpha_1 + 2\alpha_2 + 2\alpha_3$
+\item $a_2 = \alpha_2-3\alpha_3$
+\end{itemize}
+
+\[\left(\begin{array}{ccc}
+ a_0\\
+ a_1\\
+ a_2\\
+\end{array}\right)= \left(\begin{array}{ccc}
+1 &0& 4\\
+2 &2& 2\\
+0 &1& -3\\
+\end{array}\right)
+\left( \begin{array}{ccc}
+ \alpha_1\\
+ \alpha_2\\
+ \alpha_3\\
+\end{array}\right)\]
+
+\[
+\left|\begin{array}{ccc}
+1 &0& 4\\
+2 &2& 2\\
+0 &1& -3\\
+\end{array}\right| =0? \mbox{Yes}\]
+}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+			
+
+
+
+
+
+
+
+
+
+
+
+%-----------------------------------------------------------------------------------------------------%
+\newpage
+
+\subsection{Bendix Carstensen's data sets}
+\citet{bxc2008}describes the sampling method when discussing of a motivating example.Diabetes patients attending an outpatient clinic in Denmark have their $HbA_{1c}$ levels routinely measured at every visit.Venous and Capillary blood samples were obtained from all patients appearing at the clinic over two days.
+
+Samples were measured on four consecutive days on each machines, hence there are five analysis days.Carstensen notes that every machine was calibrated every day to  the manufacturers guidelines.
+
+
+
+
+
+%-----------------------------------------------------------------------------------------------------%
+\bibliography{transferbib}
+\end{document} 
