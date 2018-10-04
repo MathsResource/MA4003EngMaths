@@ -1,0 +1,42 @@
+\documentclass[]{article}
+
+%opening
+\title{MA4003 Scratch Pad}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+%------------------------------------------------------ %
+\section{Laplace Transforms}
+
+\[\mathcal{L}\left\{f(t)\right\} = F(s)\]
+\begin{itemize}
+\item $f(t)$ : function in time domain
+\item $F(s)$ : function in frequency domain
+\end{itemize}
+The Laplace transform of a function $f(t)$, defined for all real numbers $t \geq 0$, is the function $F(s)$, defined by:
+\[F(s) = \mathcal{L} \left\{f(t)\right\}(s)=\int_0^{\infty} e^{-st} f(t) \,dt. \]
+%------------------------------------------------------ %
+\subsection{Inverse Laplace Transform}
+\[
+f(t) = \mathcal{L}^{-1} \{F(s)\} \]
+
+%------------------------------------------------------ %
+\subsection{Frequency differentiation}	 
+\[t f(t)  \rightarrow 	 -F'(s) \] 	
+F′ is the first derivative of F.
+
+\subsection{Heaviside step function}	 
+The Heaviside step function, or the unit step function, usually denoted by $u$), is a discontinuous function whose value is zero for negative argument and one for positive argument. 
+
+\subsection{Partial Fraction Expansion}
+The impulse response is simply the inverse Laplace transform of this transfer function:
+\[h(t) = \mathcal{L}^{-1}\{H(s)\}.\]
+To evaluate this inverse transform, we begin by expanding H(s) using the method of \textbf{partial fraction expansion}:
+
+\[\frac{1}{(s+\alpha)(s+\beta)} = { P \over s+\alpha } + { R  \over s+\beta }.\]
+
+
+\end{document}

@@ -1,0 +1,25 @@
+	&	f(t) , for t \geq 0	&	F(S) = \mathcal(L}	\\ \hline
+1	&	1	&	\frac{1}{s}	\\ \hline %% 1 Ready
+2	&	t 	&	\frac{1}{s^2}	\\ \hline %% 2 Ready
+3	&	$t^n$ 	&	n!/ sn+1	\\ \hline
+4	&		&	\frac{1}{s−a}	\\ \hline
+5	&	t^n\,e^{at}	&	 n!/(s−a)n+1	\\ \hline
+6	&	sinh (at) 	& \frac{a}{s^2−a^2}		\\ \hline
+7	&	cosh (at) 	&	\frac{s}{s^2−a^2}	\\ \hline
+8	&	\frac{1}{a−b} (e^{at} − e^{bt}) 	&	$\frac{1}{(s−a)(s−b)}$	\\ \hline
+9	&	a\a−b e^{at} − b\a−b e^{bt} 	&	$\frac{s}{(s−a)(s−b)}$	\\ \hline
+10	&	sin (at) 	&	a\s^2+a^2	\\ \hline
+11	&	cos (at) 	&	s\s^2+a^2	\\ \hline
+12	&	f^\prime(t) 	&	sF(s) − f(0)	\\ \hline
+13	&	f^{\prime \prime}(t) 	&	$s^2F(s) − sf(0) − f^\prime(0)$	\\ \hline
+14	&	\int^{t}_0 f(\tau )d\tau 	&	 1\sF(s)	\\ \hline
+15	&	e^{at}\times f(t) 	&	$F(s − a)$	\\ \hline %% 15 Ready
+16	&	Heaviside $u_a(t)$ 	&	$\frac{e^{-as}}{s}$	\\ \hline
+17	&	$f(t − a)u_a(t)$	&	$e^{-as} F(s)$	\\ \hline
+18	&	$\mbox{Ramp} R(t − a)$ 	&	$\frac{e^{-as}}{s^2}$	\\ \hline
+19	&	tf (t) 	&	−F0(s)	\\ \hline
+20	&	\frac{f(t)}{t}	& \int^{\infty}_{s} F(\sigma) d \sigma		\\ \hline
+21	&		&	F(s)G(s)	\\ \hline
+22	&	f(t) = f(t + p)	& 
+\frac{1}{1-e^{-sp}} \int^{p}_0 f(t) e^{-st}dt		\\ \hline %% 22 READY
+					
