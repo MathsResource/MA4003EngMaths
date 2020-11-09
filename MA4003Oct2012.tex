@@ -174,25 +174,7 @@ Numerator can be re-expressed as sum of two terms. $ s = (s-a) + a $
 \[ \frac{s}{(s+a)^2} =  \frac{s-a}{(s+a)^2} + \frac{a}{(s+a)^2}  = \frac{1}{s+a} + \frac{a}{(s+a)^2} \]
 \end{itemize}
 
-\subsection*{Convolution (Q6)}
-\begin{itemize}
-\item[(d1)] Find the Laplace transform of both terms individually : $F_1(s)$ and $F_2(s)$.
-\item[(d2)] The Laplace transform of the convolution result $f_1(t) \ast f_2(t)$ is the product of $F_1(s)$ and $F_2(s)$.
-\[ \mathcal{L} [ f_1(t) \ast f_2(t) ] = F_1(S)F_2(S) \]
-\item[(d3)] To find $f_1(t) \ast f_2(t)$, Compute the inverse Laplace Transform of $F_1(S)\times F_2(S)$
-\[ \mathcal{L}^{-1}[ F_1(S)F_2(S)] = f_1(t) \ast f_2(t) \]
-\end{itemize}
 
-\subsection*{Period of a function (old questions)}
-\begin{itemize}
-\item[(e1)] Period of a function $Trig(kx)$:
-\[ p =\frac{2\pi}{k} \]
-\end{itemize}
-\subsection*{Even and Odd Functions (Q8)}
-\begin{itemize}
-\item[(f1)] Even Functions: $f(-a) = f(a)$
-\item[(f2)] Odd Functions: $f(-a) = -f(a)$
-\end{itemize}
 
 \subsection*{Fourier Coefficients (Q9)}
 \begin{itemize}
@@ -208,37 +190,9 @@ Numerator can be re-expressed as sum of two terms. $ s = (s-a) + a $
 \end{itemize}
 \newpage
 
-\section*{Question 1}
-Choose appropriate Laplace Transform from tables
-%----------------------------------------%
-\subsection*{Q12011 Yellow}
-$\mathcal{L}[cos3t + sin3t]$ = $\mathcal{L}[cos3t]$+ $\mathcal{L}[sin3t]$\\
-Answer : \[ G(s) = \frac{s}{s^2+9}+\frac{3}{s^2+9}= \frac{s+3}{s^2+9}\]
-%----------------------------------------%
-\subsection*{Q1 2011 Green}
-$\mathcal{L}[cos32 + sin2t]$ = $\mathcal{L}[cos2t]$+ $\mathcal{L}[sin2t]$ \\
-
-Answer : \[ G(s) = \frac{s}{s^2+4}+\frac{2}{s^2+4}= \frac{s+2}{s^2+4}\]
-%----------------------------------------%
-
-\subsection*{Q1 2010 Yellow}
-Compute the Laplace Transform of $cosh 2t - sinh 2t$\\
-$\mathcal{L}[cosh2t 1 sinh2t]$ = $\mathcal{L}[cosh2t]$- $\mathcal{L}[sinh2t]$\\
-Answer : \[ G(s) = \frac{s}{s^2-4}-\frac{2}{s^2-4}= \frac{s-2}{s^2-4}\]\\
-This doesn't correspond to any of the answers! (Simplify it)\\
-Answer : \[ G(s) = \frac{s-2}{s^2-4} = \frac{s-2}{(s-2)(s+2)} = \frac{1}{s+2}\]
-
-%----------------------------------------%
-\subsection*{Q1 2010 Green}
 
 
-Compute the Laplace Transform of $cosh 2t + sinh 2t$\\
-$\mathcal{L}[cosh2t + sinh2t]$ = $\mathcal{L}[cosh2t]$+ $\mathcal{L}[sinh2t]$\\
-Answer : \[ G(s) = \frac{s}{s^2-4}+\frac{2}{s^2-4}= \frac{s+2}{s^2-4}\]\\
-This doesn't correspond to any of the answers! (Simplify it)\\
-Answer : \[ G(s) = \frac{s+2}{s^2-4} = \frac{s+2}{(s-2)(s+2)} = \frac{1}{s-2}\]
-%----------------------------------------%
-\newpage
+
 %-----------------------------------------------------------------------------%
 \section*{Question 2}
 Choose appropriate Laplace Transform from tables. (Table Entries 3 and 4)
@@ -287,108 +241,8 @@ If $f(t-a) = f(t-1) = sin(2t - 2)$ then $f(t)= sin(2t)$ \\
 $\mathcal{L}[f(t-a)u_a(t)]$ =$e^{-as}F(s)$ \\
 $F(s)$ is simply $\mathcal{L}[f(t)]$\\
 %----------------------------------------%
-\newpage
-%-----------------------------------------------------------------------------%
-\section{Question 4}
-%----------------------------------------%
-\subsection*{Q4 2011 Yellow}
 
-\begin{itemize}
-\item Find the inverse Laplace transform of
-\[ G(s) = e^{-2s}\frac{1}{s^2} \]
-\item Can consider G(s) in the following form , with $a=2$
-\[ G(s) = e^{-as}F(s) \]
-\item The inverse of this is
-\[ g(t) = f(t-a) u_a(t) \]
-\item Table Entry 2
-\[ F(s) = 1/s^2 \Rightarrow f(t) = t \]
-\item Identify $f(t-a)$
-\[ \therefore f(t-a) = f(t-2) = t-2 \]
-\item Answer
-\[ g(t) = f(t-a)u_a(t) = (t-2)u_2(t) \]
-\end{itemize}
-%----------------------------------------%
-\subsection*{Q4 2011 Green}
-\begin{itemize}
-\item Find the inverse Laplace transform of
-\[ G(s) = \frac{s}{s^2 + 4s + 4} \]
-\item Factorise the denominator?  $(s+2)^2$
-\item
-\[ G(s) = \frac{s}{(s+2)^2} \]
-\item We can express the numerator as follows:  $s = (s+2)-2$
-\item
-\[ G(s) = \frac{s}{(s+2)^2} =  \frac{s+2}{(s+2)^2} - \frac{2}{(s+2)^2} \]
-\item The first term simplifies to something simple.
-\item The second term can be solved using Table Entry 5, with $a=-1$ and $n=1$.
-\item
-\[ g(t)  = e{-2t} - e{-2t}t \]
-\end{itemize}
 
-%----------------------------------------%
-\subsection*{Q4 2010 Yellow}
-
-\begin{itemize}
-\item Find the inverse Laplace transform of
-\[ G(s) = \frac{s}{s^2 -2s + 1} \]
-\item Factorise the denominator?  $(s-1)^2$
-\item
-\[ G(s) = \frac{s}{(s-1)^2} \]
-\item We can express the numerator as follows:  $s = (s-1)+1$
-\item
-\[ G(s) = \frac{s}{(s-1)^2} =  \frac{s-1}{(s-1)^2} + \frac{1}{(s-1)^2} \]
-\item The first term simplifies to something simple.
-\item The second term can be solved using Table Entry 5, with $a=1$ and $n=1$.
-\item Answer:
-\[ g(t)  = e{t} + e{t}t = e{t}(1+t)  \]
-
-\end{itemize}
-%----------------------------------------%
-\subsection*{Q4 2010 Green}
-\begin{itemize}
-\item Find the inverse Laplace transform of
-\[ G(s) = \frac{s}{s^2 -2s + 1} \]
-\item Factorise the denominator?  $(s-1)^2$
-\item
-\[ G(s) = \frac{s}{(s-1)^2} \]
-\item We can express the numerator as follows:  $s = (s-1)+1$
-\item
-\[ G(s) = \frac{s}{(s-1)^2} =  \frac{s-1}{(s-1)^2} + \frac{1}{(s-1)^2} \]
-\item The first term simplifies to something simple.
-\item The second term can be solved using Table Entry 5, with $a=1$ and $n=1$.
-\item Answer:
-\[ g(t)  = e{t} + e{t}t = e{t}(1+t)  \]
-
-\end{itemize}
-
-\newpage
-%-------------------------------------------------------------------------%
-\section*{Question 5}
-%----------------------------------------%
-\subsection*{Q5 2011 Yellow}
-\begin{itemize}
-\item Find the inverse Laplace transform of
-\[ G(s) = \frac{s-1}{s^2 - 2s + 2} \]
-\item Factorise the denominator?  not this time. ( no obvious roots)
-\item
-\[ G(s) = \frac{s-1}{s^2 + 2s + 2} = \frac{s-1}{(s-1)^2 + 1} \]
-\item We can express the transform in following form:  $F(s-a)$ where $a=1$
-\item Necessarily \[ F(s) = = \frac{s}{s^2 + 1} \]
-\item The Inverse Laplace transform of this: $f(t) = cos(t)$
-\item The overal Inverse Laplace transform of this: \[g(t) = e^{at}f(t) = e^tcos(t)\]
-\end{itemize}
-
-%----------------------------------------%
-\subsection*{Q5 2011 Green}
-\begin{itemize}
-\item Find the inverse Laplace transform of
-\[ G(s) = \frac{s-2}{s^2 + s -6} \]
-\item Factorise the denominator:  $(s-2)(s+3)$
-\item Simplification of the expression is possible
-\[ G(s) = \frac{s-2}{(s-2)(s+3)} = \frac{1}{s+3} \]
-\item The inverse Laplace Transform can be computed using Table Entry 4
-\[ g(t)  = e{-3t}  \]
-
-\end{itemize}
 %----------------------------------------%
 \subsection*{Q5 2010 Yellow}
 \begin{itemize}
