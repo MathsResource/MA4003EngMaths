@@ -1,0 +1,164 @@
+
+\documentclass[a4]{beamer}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{newlfont}
+\usepackage{amsmath,amsthm,amsfonts}
+%\usepackage{beamerthemesplit}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{mathptmx}  % Font Family
+\usepackage{helvet}   % Font Family
+\usepackage{color}
+
+\mode<presentation> {
+ \usetheme{Default} % was Frankfurt
+ \useinnertheme{rounded}
+ \useoutertheme{infolines}
+ \usefonttheme{serif}
+ %\usecolortheme{wolverine}
+% \usecolortheme{rose}
+\usefonttheme{structurebold}
+}
+
+\setbeamercovered{dynamic}
+
+\title[MathsCast]{MathsCasts - Dynamic Maths Support) \\ {\normalsize Statistics}}
+\author[Kevin O'Brien]{Kevin O'Brien \\ {\scriptsize Kevin.obrien@ul.ie}}
+\date{Summer 2011}
+\institute[Maths \& Stats]{Dept. of Mathematics \& Statistics, \\ University \textit{of} Limerick}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transform}
+
+\begin{itemize}
+\item It turns out that many problems are greatly simplified when converted to the complex frequency domain. 
+
+\item For example, integration and differentiation in the time domain become simple algebraic expressions in the complex frequency domain.
+
+\item The Laplace transform converts a problem between these two domains.
+
+\item This type of calculation can be done entirely in the time domain, but it requires solving differential equations,
+which is challenging and time-consuming.
+
+\item The Laplace transform technique is a huge improvement over working directly with differential equations.
+
+\end{itemize}
+}
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transform}
+
+\begin{itemize}
+\item The \emph{Laplace} transform of $f(t)$ is denoted $F(s)$
+\item $f(t)$ is a function in the time domain
+\item $F(S)$ is the function in the complex frequency domain that corresponds to $F(s)$
+\item The \emph{ Laplace} transform operator is denoted $\mathcal{L}$
+\end{itemize}
+
+}
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transforms}
+
+\begin{itemize}
+\item We will use a set of tables of \emph{Laplace} transforms.
+\end{itemize}
+}
+
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transforms :  Example 1}
+\Large
+\vspace{-3cm}
+Compute the Laplace transforms of the time domain function $ f(t)$  
+\[ f(t) = t^4 \]
+
+
+
+}
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transforms :  Example 1}
+\Large
+\vspace{-2.2cm}
+\begin{table}[ht]
+\caption{Laplace Transforms Tables} % title of Table
+\centering 
+\begin{tabular}{|ccc |ccc| } 
+\hline %inserts double horizontal lines
+&f(t)& && F(s)& \\  \hline \hline &\ldots&& &\ldots& \\ \hline
+&$t^n$ &&& $ {n! \over s^{n+1}}$ &\\ \hline 
+ &\ldots&& &\ldots& \\ \hline
+\end{tabular}
+\end{table}
+
+
+}
+
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transforms :  Example 2}
+\Large
+\vspace{-3cm}
+Compute the Laplace transforms of the time domain function $ f(t)$  
+\[ f(t) = 4\; \mbox{sin}(2t) \]
+
+
+
+}
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transforms :  Example 2}
+\Large
+\vspace{-2.2cm}
+\begin{table}[ht]
+\caption{Laplace Transforms Tables} % title of Table
+\centering 
+\begin{tabular}{|ccc |ccc| } 
+\hline %inserts double horizontal lines
+&f(t)& && F(s)& \\  \hline \hline &\ldots&& &\ldots& \\ \hline
+&$\mbox{ sin }(at)$ &&& $ {a^2 \over s^2 + a^2}$ &\\ \hline 
+ &\ldots&& &\ldots& \\ \hline
+\end{tabular}
+\end{table}
+
+
+}
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transforms :  Example 3}
+\Large
+\vspace{-3cm}
+Compute the Laplace transforms of the time domain function $ f(t)$  
+\[ f(t) = {e^{-t} \over 2} \]
+
+
+
+}
+%-----------------------------------------------------------------------------------------------------------------%
+\frame{
+\frametitle{Laplace Transforms :  Example 3}
+\Large
+\vspace{-2.2cm}
+\begin{table}[ht]
+\caption{Laplace Transforms Tables} % title of Table
+\centering 
+\begin{tabular}{|ccc |ccc| } 
+\hline %inserts double horizontal lines
+&f(t)& && F(s)& \\  \hline \hline &\ldots&& &\ldots& \\ \hline
+&$e^{at}$ &&& $ {1 \over s - a}$ &\\ \hline 
+ &\ldots&& &\ldots& \\ \hline
+\end{tabular}
+\end{table}
+
+
+}
+%-----------------------------------------------------------------------------------------------------------------%
+\end{document}

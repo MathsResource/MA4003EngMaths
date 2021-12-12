@@ -1,0 +1,311 @@
+UNIVERSITY of LIMERICK
+OLLSCOIL LUIMNIGH
+Faculty of Science and Engineering
+Department of Mathematics & Statistics
+END OF SEMESTER ASSESSMENT PAPER
+MODULE CODE: MA4003 SEMESTER: Autumn 2014/15
+MODULE TITLE: Engineering Mathematics 3 DURATION OF EXAMINATION: 2 2 1 hours
+LECTURER: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PERCENTAGE OF TOTAL MARKS: 80 %
+EXTERNAL EXAMINER: Prof. J. King
+INSTRUCTIONS TO CANDIDATES: Full marks for correct answers to 5 questions.
+A table of Laplace transforms is attached.Table of Laplace Transforms
+f (t), t ≥ 0
+F (s) = L (f (t)) =
+∫ ∞
+0
+1 1
+s
+t 1
+s 2
+t n n!
+s n+1
+e at 1
+s−a
+t n e at n!
+(s−a) n+1
+sinh at a
+s 2 −a 2
+cosh at s
+s 2 −a 2
+1
+at
+a−b (e
+a at
+a−b e
+∫ t
+0
+−
+− e bt )
+e −st f (t) dt
+1
+(s−a)(s−b)
+b bt
+a−b e
+s
+(s−a)(s−b)
+sin at a
+s 2 +a 2
+cos at s
+s 2 +a 2
+f ′ (t) sF (s) − f (0)
+f ′′ (t) s 2 F (s) − sf (0) − f ′ (0)
+1
+s F (s)
+f (τ ) dτ
+e at f (t) F (s − a)
+Heaviside u a (t) e −as
+s
+f (t − a)u a (t) e −as F (s)
+Ramp R(t − a) e −as
+s 2
+tf (t) −F ′ (s)
+f (t)
+t
+∫
+(f ∗ g)(t) ≡
+t
+f (t − τ )g(τ ) dτ
+∫
+∞
+F (σ) dσ
+s
+F (s)G(s)
+0
+f (t) = f (t + p)
+1
+1 − e −sp
+∫
+0
+p
+f (t)e −st dtMA4003 Engineering Mathematics 3
+1.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Autumn 2014/15
+Marks
+(a) Sketch the graphs of the following functions f (t), t ≥ 0 and find their
+Laplace transforms:
+(i) f (t) = te −2t
+
+if t < 1
+ 0,
+sin π(t − 1), if 1 ≤ t ≤ 3
+(------------------------------------
+
+(ii)) f (t) =
+
+0,
+otherwise
+{
+3t,
+if 0 ≤ t < 1
+(------------------------------------
+
+(iii) f (t) =
+6 − 3t, if 1 ≤ t < 2
+2
+3
+f (t + 2) = f (t)
+3
+(b) Find the inverse Laplace transforms of the following
+e −s
+(------------------------------------
+
+(ii)) 2
+s − 3s + 2
+2s + 2
+(i) 2
+s − 7s + 6
+2.
+(
+(------------------------------------
+
+(iii) arctan
+(a) Use Laplace transforms to solve the initial value\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \]\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \][frac{d^2y}{dt^2} ;+; frac{dy}{dt} + y = cos 2t ]
+d 2 y
+dy
++ 7 + 10y = 4e −t ,
+2
+dt
+dt
+(b) Prove that
+(∫
+L
+t
+0
+y(0) = 0,
+s +3
+2
+2,3,3
+)
+8
+dy
+(0) = 3
+dt
+)
+1
+y(u) du = L (y(t))
+s
+2
+(c) Use Laplace transforms to solve the initial value\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \]\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \][frac{d^2y}{dt^2} ;+; frac{dy}{dt} + y = cos 2t ]
+∫ t
+dy
++ 2y +
+y(u) du = 0,
+y(0) = 2
+dt
+0
+3.
+(a) Sketch the graph of the following periodic function and find its Fourier
+series
+
+ −x − π 2 , if −π < x ≤ − π 2
+0,
+if − π 2 < x ≤ π 2
+f (x) =
+f (x + 2π) = f (x)
+
+π
+π
+x − 2 ,
+if 2 < x ≤ π
+6
+8
+In particular show that
+a n =
+2
+(cos nπ − cos(nπ/2)) ,
+πn 2
+n> 0
+(b) Hence evaluate the series
+1+
+4
+1
+1
+1
++
++
++ ···
+9 25 49
+(c) The function ∑ g : R → R is an even function of period 2π with Fourier
+series a 2 0 + ∞
+n=1 a n cos(nx). The function h : R → R is defined by
+( x )
+a 0
+h(x) = − + g
+2
+2
+Find the Fourier series of h.
+4MA4003 Engineering Mathematics 3
+4.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Autumn 2014/15
+(a) Define the row rank, column rank and rank of A ∈ R m×n .
+(b) For
+
+1
+ −2
+A = 
+ 3
+4
+Marks
+2
+
+−2
+0
+−5
+6 
+
+−3 −2 
+−5 −2
+find its rank ( = r).
+6
+(c) Choose columns from the matrix A of part (b) that form a basis for its
+column space. Write any remaining columns as a linear combination
+of the basis vectors.
+Let C ∈ R m×r be the matrix whose columns are the basis vectors.
+Hence show that there exists R ∈ R r×n such that
+2
+A = CR.
+.
+What does this say about the relationship between the rows of A and
+rows of R, and what does this in turn say about the row rank and col-
+umn rank?
+Can the converse be established between the column rank and row
+rank? And if so, what conclusion follows?
+5.
+2
+2
+2
+(a) Let P 2 be the space of polynomials of degree at most two. Use the
+Gram-Schmidt process to transform the standard basis {1, x, x 2 } for
+P 2 to the orthonormal one defined by the inner product
+∫ 1
+< p, q >=
+p(x)q(x) dx
+−1
+8
+e x
+(b) Find the least squares approximation to over the interval [−1, 1] in
+P 2 using the inner product defined in part (a).
+6. Find the eigenvalues and corresponding eigenspaces of the matrix
+(
+)
+−1
+4
+A =
+1 −1
+
+
+Show that $A$ is diagonalisable over the reals and find the matrix P which
+diagonalises it.
+Hence or otherwise solve the system of differential equations
+d
+X = AX,
+dt
+X(0) = (6, 1) T
+8
+6
+4
+6MA4003 Engineering Mathematics 3
+7.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(a) Find the Cholesky decomposition (A =
+gular) of the matrix
+
+1 3
+A =  3 10
+1 4
+Autumn 2014/15
+Marks
+L̃ L̃ T , where L̃ is lower trian-
+5
+
+1
+4 
+6
+and hence solve the system of equations $Ax = b$ where
+
+
+3
+b =  8 
+−6
+3
+(b) The system of equations Ax = b can also be solved using an iterative
+scheme. One such scheme for a square matrix A is the Gauss - Seidel
+method in which successive approximations are generated by
+x k+1 = (L + D) −1 b − (L + D) −1 U x k
+where x k is the k-th approximation, and L + D + U = A with D being
+a diagonal matrix whose entries are the respective diagonal entries of
+A, and L and U being lower triangular and upper triangular matrices
+containing the entries of A below and above the diagonal respectively.
+Show how the iteration scheme for generating the successive approxi-
+mations may be derived. Under what condition does this scheme con-
+verge for any initial approximation x 0 ?
+Does the scheme converge for the A matrix of part (a)? Explain your
+answer.
+4
+4

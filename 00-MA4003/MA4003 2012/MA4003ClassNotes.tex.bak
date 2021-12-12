@@ -1,0 +1,98 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm, amsmath}
+\usepackage[usenames]{color}
+\usepackage{listings}
+\lstset{% general command to set parameter(s)
+basicstyle=\small, % print whole listing small
+keywordstyle=\color{red}\itshape,
+% underlined bold black keywords
+commentstyle=\color{blue}, % white comments
+stringstyle=\ttfamily, % typewriter type for strings
+showstringspaces=false,
+numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt, %
+frame=shadowbox,
+rulesepcolor=\color{black},
+,columns=fullflexible
+} %
+%\usepackage[dvips]{graphicx}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{1.25cm}{1.25cm}{18.5 cm}{25cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.2}
+\pagenumbering{arabic}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{ill}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{notation}{Notation}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+\renewcommand{\thenotation}{}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+
+\begin{document}
+
+\section{Engineering Calculus (MA4003)}
+\subsection{Inverse Laplace Transforms (Q3)}
+\begin{enumerate}
+\item Consider fucntion in form $f(t-a) \times u_a(t)$. Determine $f(t-a)$ and hence $f(t)$. From $f(t)$ compute $F(s)$.
+\end{enumerate}
+
+\subsection{Inverse Laplace Transforms (Qs 4 and 5)}
+\begin{enumerate}
+\item
+Always (attempt to) factorize the quadratic component.
+\item Use Table entries 8 and 9 for the following form: \[ \frac{s+k}{(s+a)(s+b)} = \frac{s}{(s+a)(s+b)} + \frac{k}{(s+a)(s+b)}  \]
+\item Factorize because sometimes terms cancel each other out.
+\[ \frac{s+a}{(s^2+(a+b)s + ab)}  = \frac{s+a}{(s+a)(s+b)} = \frac{1}{(s+b)} \]
+\item
+Sometimes there is no obvious way to factorize the denominator. Try a different approach:
+
+\[ \frac{s+a}{(s+a)^2 + m}  \mbox{ remark: We can use now shifting theorem} \]
+\item
+Numerator can be re-expressed as sum of two terms. $ s = (s-a) + a $
+\end{enumerate}
+
+\subsection{Convolution (Q6)}
+\begin{enumerate}
+\item Find the Laplace transform of both terms individually : $F(s)$ and $G(s)$.
+\item The Laplace transform of the convolution result $f(t) \ast g(t)$ is the product of $F(s)$ and $G(s)$.
+\[ \mathcal{L} [ f(t) \ast g(t) ] = F(S)G(S) \]
+\item To find $f(t) \ast g(t)$, Compute the inverse Laplace Transform of $F(S)\times G(S)$
+\[ \mathcal{L}^{-1}[ F(S)G(S)] = f(t) \ast g(t) \]
+\end{enumerate}
+
+\subsection{Period of a function (old questions)}
+\begin{enumerate}
+\item Period of a function $Trig(kx)$:
+\[ p =\frac{2\pi}{k} \]
+\end{enumerate}
+
+\subsection{Fourier Coefficients}
+\begin{enumerate}
+\item
+\[ a_0 = \frac{1}{\pi}\int^{\pi }_{-\pi} f(x) dx  \]
+\item
+\[ a_n = \frac{1}{\pi}\int^{\pi }_{-\pi} f(x) cos(nx) dx  \]
+\item
+\[ b_n = \frac{1}{\pi}\int^{\pi }_{-\pi} f(x) sin(nx) dx  \]
+\end{enumerate}
+
+
+\end{document}

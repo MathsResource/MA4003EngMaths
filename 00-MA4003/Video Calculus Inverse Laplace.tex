@@ -1,0 +1,152 @@
+
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{framed}
+
+\begin{document}
+
+
+%-----------------------------------------%
+\begin{frame}
+\Huge
+\[\mbox{Calculus For Engineers}\]
+\LARGE
+\[\mbox{Inverse Laplace Transforms}\]
+
+\Large
+\[\mbox{kobriendublin.wordpress.com}\]
+\[\mbox{Twitter: @StatsLabDublin}\]
+\end{frame}
+
+%-----------------------------------------%
+\begin{frame}
+\frametitle{Inverse Laplace Transforms }
+\LARGE
+
+Find the Inverse Laplace Transform of the following expression
+
+\[ G(s) = \frac{7}{s^5} \]
+
+\end{frame}
+
+%-----------------------------------------%
+\begin{frame}
+\frametitle{Inverse Laplace Transforms}
+\Large
+The Laplace transform $G(s)$ is structured in the form:
+\[ \frac{n!}{s^{(n+1)}} \]
+
+Relevant entry from Laplace Transform formula sheet (entry no. 3):
+\[ L[t^n] = \frac{n!}{s^{(n+1)}}  \]
+
+\phantom{Clearly n = 4}
+\bigskip
+\end{frame}
+
+%-----------------------------------------%
+\begin{frame}
+\frametitle{Inverse Laplace Transforms}
+\LARGE
+\vspace{-1.9cm}
+\[ L[t^4] = \frac{4!}{s^5} =\frac{24}{s^5} \]
+
+\[ k\times L[t^4] = k \times \frac{4!}{s^5} =\frac{24k}{s^5} \]
+
+\bigskip
+%Clearly n= 4 and 24k = 7
+
+%Therefore $k = {7 \over 24}$
+\end{frame}
+\end{document}
+%-----------------------------------------%
+%-----------------------------------------%
+% Example 2 [MT 2009 Q4] Find the inverse Laplace transform of G(s)
+\begin{frame}
+\frametitle{Inverse Laplace Transforms}
+\[ G(s) = \frac{s}{s^2 -2s + 1} \]
+Factorise the denominator: \[s ^2 - 2s + 1 = (s - 1)^2\]
+\end{frame}
+%-----------------------------------------%
+\begin{frame} 
+\frametitle{Inverse Laplace Transforms}
+Rewrite G(s) as follows: \[G(s) = \frac{s}{(s-1)^2} \]
+
+Can we use the form $F(s-a)$ with $a=1$
+s = (s-1)+1
+The expression is now in form $F(s-a)$, with $a = 1$.
+\end{frame}
+%-----------------------------------------%
+\begin{frame} 
+\frametitle{Inverse Laplace Transforms}
+\[ F(s) = \frac{s+1}{s^2} = \frac{s}{s^2} + \frac{1}{s^2} = \frac{1}{s} + \frac{1}{s^2}\]
+
+\[ f(t) = L^{-1}[\frac{1}{s}] + L^{-1}[\frac{1}{s^2}] = 1 + t\]
+
+\[ L^{-1}[G(s)] = e^{-t}(t+1 ) \]
+
+\end{frame}
+%-----------------------------------------%
+
+% [MT 2009 Q5] Find the inverse Laplace transform of G(s)
+\begin{frame} 
+\frametitle{Inverse Laplace Transforms}
+\[ G s) = \frac{s+2}{s^2 + 5s -6} \]
+
+\end{frame}
+%-----------------------------------------%
+\begin{frame}
+\frametitle{Inverse Laplace Transforms}
+Factorize the denominator: $s^2 + 5s -6$
+\[= (s+1)(s-6) \]
+
+
+\[ G s) = \frac{s+2}{s^2 + 5s -6} = \frac{s+2}{(s+1)(s-6)} \]
+\end{frame}
+
+%-----------------------------------------%
+\begin{frame}
+\frametitle{Inverse Laplace Transforms}
+\[ G s)  = \frac{s+2}{(s+1)(s-6)}  = \frac{s}{(s+1)(s-6)} +  \frac{2}{(s+1)(s-6)}\]
+
+
+let a = 1, b = - 6
+
+
+\end{frame}
+%-----------------------------------------%
+\begin{frame}
+\frametitle{Inverse Laplace Transforms}
+
+
+\end{frame}
+
+%-----------------------------------------%
+
+% 
+[MT 2008 Q5] Find the inverse Laplace transform of G(s)
+\begin{frame}
+\frametitle{Inverse Laplace Transforms}
+
+\[G(s) = \frac{s-2}{s^2 -5s +6} \]
+
+
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+Factorize the denominator: 
+
+\[s^2 -5s +6 =(s-2)(s+3)\]
+
+\[G(s) = \frac{s-2}{s^2 -5s +6} = \frac{s-2}{(s-2)(s+3)} \]
+
+\end{frame}
+%-------------------------------------------%
+\begin{frame}
+From entry no 4. the inverse Laplace transform is computed.
+
+\end{frame}
+
+\end{document}

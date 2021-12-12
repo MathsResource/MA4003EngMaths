@@ -1,0 +1,133 @@
+
+
+\documentclass[a4]{beamer}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{newlfont}
+\usepackage{amsmath,amsthm,amsfonts}
+%\usepackage{beamerthemesplit}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{mathptmx}  % Font Family
+\usepackage{helvet}   % Font Family
+\usepackage{color}
+
+\mode<presentation> {
+ \usetheme{Default} % was Frankfurt
+ \useinnertheme{rounded}
+ \useoutertheme{infolines}
+ \usefonttheme{serif}
+ %\usecolortheme{wolverine}
+% \usecolortheme{rose}
+\usefonttheme{structurebold}
+}
+
+\setbeamercovered{dynamic}
+
+\title[MathsCast]{MathsCasts - Dynamic Maths Support) \\ {\normalsize Engineering Maths 3 : Convolution}}
+\author[Kevin O'Brien]{Kevin O'Brien \\ {\scriptsize Kevin.obrien@ul.ie}}
+\date{Summer 2011}
+\institute[Maths \& Stats]{Dept. of Mathematics \& Statistics, \\ University \textit{of} Limerick}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+%--------------------------------------------------------------------------------%
+\frame{\frametitle{Convolution}
+\Large
+\begin{itemize}
+\item Convolution is a mathematical operation on two functions $f(t)$ and $g(t)$, creating a third function that can be considered a ``blending" of the two component functions.
+
+
+\item The convolution of functions is denoted $ (f * g )(t)$, and can be evaluated using this formula:
+\[(f * g )(t) = \int_{-\infty}^{\infty} f(u)\, g(t - u)\, du\]
+\item Convolution is quite useful in a lot of software and engineering applications, such as image processing.
+\end{itemize}
+}
+
+%--------------------------------------------------------------------------------%
+\frame{
+\frametitle{Using Laplace Transforms}
+\Large
+We can compute $ (f * g )(t)$, the convolution of two functions $f(t)$ and $g(t)$, by following these steps:\\
+\bigskip
+%\normalsize
+\begin{itemize}
+\item Get the Laplace transforms of the two component functions : $\mathcal{L}[f(t)] = F(s)$ and $\mathcal{L}[g(t)] = G(s)$
+\item Multiply these two Laplace transforms: $ F(s) \times G(s)$
+\item Find the inverse Laplace transform of the product: $\mathcal{L}^{-1}[F(s) \times G(s)] $
+%\item The inverse Laplace transform is the convolution, which is the result we are looking for.
+\end{itemize}
+}
+
+%------------------------------------------------------------------------%
+%Convolution
+\frame{
+\frametitle{Example 1}
+\Large
+Use Laplace transforms to compute $t \ast t^{2}$, the convolution of $t$ and $t^{2}$ \\ \bigskip
+
+First compute the Laplace transforms of the two component functions:\\
+\bigskip
+% $\mathcal{L} [ t \ast t^{2} ]  = \mathcal{L} [ t ] \times \mathcal{L} [  t^{2} ]$\\
+\begin{itemize}
+\item $\mathcal{L} [ t ]$ \bigskip % = {1 \over s^2}$\\
+\item $\mathcal{L} [ t^2 ]$ % = {2 \over s^3}$\\
+\end{itemize}
+% $\mathcal{L} [ t \ast t^{2} ] = {1 \over s^2} \times {2 \over s^3} = {2 \over s^5}$\\
+}
+\frame{
+\frametitle{Example 1}
+\Large
+\vspace{-4cm}
+The Laplace transform of the convolution is the product of the Laplace transforms of two component functions.
+
+}
+\frame{
+\frametitle{Example 1}
+\Large
+\vspace{-4cm}
+Compute the inverse Laplace transform to find the convolution of the functions.
+
+}
+
+\frame{
+\frametitle{Example 1}
+\Large
+\vspace{-3.5cm}
+Using the table of formulae:
+\[ \mathcal{L}^{-1}\left[k \times { n! \over s^{n+1}}\right] = k \times t^{n}\]
+
+}
+%------------------------------------------------------------------------%
+%Convolution
+\frame{
+\frametitle{Example 2}
+\Large
+Use Laplace transforms to compute $e^t \ast e^{-t}$, the convolution of $e^t$ and $e^{-t}$ \\ \bigskip
+First compute the Laplace transforms of the two component functions:\\
+\bigskip
+% $\mathcal{L} [ t \ast t^{2} ]  = \mathcal{L} [ t ] \times \mathcal{L} [  t^{2} ]$\\
+\begin{itemize}
+\item $\mathcal{L} [ e^t ]$ \bigskip % = {1 \over s^2}$\\
+\item $\mathcal{L} [ e^{-t} ]$ % = {2 \over s^3}$\\
+\end{itemize}
+
+}
+\frame{
+\frametitle{Example 2}
+\Large
+\vspace{-4cm}
+The Laplace transform of the convolution is the product of the Laplace transforms of two component functions.
+
+}
+\frame{
+\frametitle{Example 2}
+\Large
+\vspace{-4cm}
+Compute the inverse Laplace transform to find the convolution of the functions.
+
+}
+
+\end{document} 

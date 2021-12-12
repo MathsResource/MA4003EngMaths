@@ -1,0 +1,8 @@
+Fourier's formula for 2p-periodic functions using sines and cosines[edit source | editbeta]
+
+Fourier analysis relates the function's time domain, shown in red, to the function's frequency domain, shown in blue. The component frequencies, spread across the frequency spectrum, are represented as peaks in the frequency domain.
+For a periodic function f(x) that is integrable on [-p, p], the numbers
+a_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x) \cos(nx)\, dx, \quad n \ge 0
+b_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x) \sin(nx)\, dx, \quad n \ge 1
+are called the Fourier coefficients of f. One introduces the partial sums of the Fourier series for f, often denoted by
+(S_N f)(x) = \frac{a_0}{2} + \sum_{n=1}^N \, [a_n \cos(nx) + b_n \sin(nx)], \quad N \ge 0.

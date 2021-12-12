@@ -1,0 +1,152 @@
+\documentclass[a4]{beamer}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{newlfont}
+\usepackage{amsmath,amsthm,amsfonts}
+%\usepackage{beamerthemesplit}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{mathptmx}  % Font Family
+\usepackage{helvet}   % Font Family
+\usepackage{color}
+
+\mode<presentation> {
+ \usetheme{Default} % was Frankfurt
+ \useinnertheme{rounded}
+ \useoutertheme{infolines}
+ \usefonttheme{serif}
+ %\usecolortheme{wolverine}
+% \usecolortheme{rose}
+\usefonttheme{structurebold}
+}
+
+\setbeamercovered{dynamic}
+
+\title[MathsCast]{MathsCasts - Dynamic Maths Support) \\ {\normalsize Statistics}}
+\author[Kevin O'Brien]{Kevin O'Brien \\ {\scriptsize Kevin.obrien@ul.ie}}
+\date{Summer 2011}
+\institute[Maths \& Stats]{Dept. of Mathematics \& Statistics, \\ University \textit{of} Limerick}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\frame{
+%\frametitle{Formula}
+\vspace{-2.3cm}
+\Large
+Period of a Trigonometric Function
+\\\bigskip
+\begin{center}
+%$\mbox{\fontsize{24}{30}\selectfont $L = \frac{2 \pi}{k}$}$
+\end{center}
+}
+
+
+
+\frame{
+\frametitle{Formula}
+\vspace{-2.3cm}
+\Large
+When you have a trigonometric function in the form of $cos(kx)$ or $sin(kx)$, the period of the function $L$ is computed using the coefficient $k$:
+\\\bigskip
+\begin{center}
+$\mbox{\fontsize{24}{30}\selectfont $L = \frac{2 \pi}{k}$}$
+\end{center}
+}
+
+%----------------------------------------------------------------------%
+
+
+\frame{
+\frametitle{Example 1}
+\vspace{-1.3cm}
+\Large
+Compute the period of the function $f(x)$, where
+\[f(x) = cos(4 \pi x).\]
+
+\textbf{Solution}:
+Here the coefficient $k$ is \hspace{2cm}\\
+%Here the coefficient $k$ is $4 \pi$.\\\bigskip
+The period of the function is therefore :
+\begin{center}
+\[\hspace{-5.3cm}L = \frac{2 \pi}{k} = \]
+\end{center}
+}
+%----------------------------------------------------------------------%
+
+\frame{
+\frametitle{Example 2}
+\vspace{-1.3cm}
+\Large
+Compute the period of the function $f(x)$, where
+\[f(x) = 2 sin(0.5 x).\]
+
+\textbf{Solution}\\
+Here the coefficient $k$ is $0.5$\\
+The period of the function is therefore \[\hspace{-5.3cm}\frac{2 \pi}{k} = \]
+}
+
+%------------------------------------------------------------------------%
+\frame{
+\frametitle{2010 Midterm Exam (Green) Question 7 }
+\Large
+Compute the period of the function $f(x)$, where
+\[f(x) =  sin (\frac{\pi x}{2}).\]
+
+\textbf{Solution}\\
+Here the coefficient $k$ is \\
+The period of the function is therefore\\ \[\hspace{-5.3cm}\frac{2 \pi}{k} = \]
+
+
+}
+
+%---The period function of $sin (\frac{\pi x}{2})$ is $4$
+%------------------------------------------------------------------------%
+\frame{
+\frametitle{2010 Midterm Exam (Yellow) Question 7 }
+\Large
+Compute the period of the function $f(x)$, where
+\[f(x) = sin \left(\frac{ x}{2}\right).\]
+
+\textbf{Solution}\\
+Here the coefficient $k$ is \\
+The period of the function is therefore\\ \[\hspace{-5.3cm}\frac{2 \pi}{k} = \]
+%The period of function $sin (\frac{ x}{2})$ is $4\pi$
+}
+
+\end{document}
+
+
+
+
+%----------------------------------------------%
+\frame{
+\frametitle{Introduction}
+When dealing with trigonometric functions, we are often required to compute the period of that function.
+}
+
+%--------------------------------------------------------------------------%
+\frame{
+
+\frametitle{Example 3}
+half period $l$
+}
+%------------------------------------------------------------------------%
+\frame{
+\frametitle{Definition}
+
+
+Consider a trigonometric function
+
+\[ cos ( n \pi x ) \]
+
+
+\begin{itemize}
+\item T$
+\item
+\end{itemize}
+}
+
+
+\end{document} 

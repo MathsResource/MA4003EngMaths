@@ -1,0 +1,105 @@
+\documentclass[a4]{beamer}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{newlfont}
+\usepackage{amsmath,amsthm,amsfonts}
+%\usepackage{beamerthemesplit}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{mathptmx}  % Font Family
+\usepackage{helvet}   % Font Family
+\usepackage{color}
+
+\mode<presentation> {
+ \usetheme{Default} % was Frankfurt
+ \useinnertheme{rounded}
+ \useoutertheme{infolines}
+ \usefonttheme{serif}
+ %\usecolortheme{wolverine}
+% \usecolortheme{rose}
+\usefonttheme{structurebold}
+}
+
+\setbeamercovered{dynamic}
+
+\title[MathsCast]{MathsCasts - Dynamic Maths Support) \\ {\normalsize Engineering Maths 3}}
+\author[Kevin O'Brien]{Kevin O'Brien \\ {\scriptsize Kevin.obrien@ul.ie}}
+\date{Summer 2011}
+\institute[Maths \& Stats]{Dept. of Mathematics \& Statistics, \\ University \textit{of} Limerick}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Fourier Coefficients}
+\frame{
+
+
+}
+%------------------------------------------------------------------------%
+\frame{
+\frametitle{Example 1 }
+\vspace{-2cm}
+Compute the coefficient $a_0$ in the \emph{Fourier} Series for the periodic function \[f(x) \;=\; x^3 \] if $-1 <x<1$, with period 2.
+
+}
+%------------------------------------------------------------------------%
+
+
+\frame{\frametitle{Is the Function odd or even?}
+
+\begin{itemize}
+\item If the function is odd, then the terms $a_0$ and $a_n$ will be zero.
+\item If the function is even, then the terms  $b_n$ will be zero.
+\end{itemize}
+
+$f(x) = x^3$  is an \textbf{\emph{odd}} function, so necessarily $a_0$ is zero.\\
+
+Lets do it from first principles.
+
+
+
+
+
+}
+
+
+%------------------------------------------------------------------------%
+\frame{
+\frametitle{Example 2 }
+\vspace{-2cm}
+Compute the coefficient $a_0$ in the \emph{Fourier} Series for the periodic function \[f(x) \;=\; x^4 \] if $-1 <x<1$, with period 2.
+
+}
+%------------------------------------------------------------------------%
+
+
+\frame{\frametitle{Is the Function odd or even?}
+
+\begin{itemize}
+\item If the function is odd, then the terms $a_0$ and $a_n$ will be zero.
+\item If the function is even, then the terms  $b_n$ will be zero.
+\end{itemize}
+
+$f(x) = x^4$  is an \textbf{\emph{even}} function, so necessarily $a_0$ is not going to equal to zero.\\
+
+Lets do it from first principles.
+}
+
+%--------------------------------------------------------------------------------%
+\frame{
+
+\[ a_o = {1 \over l } \int\limits^{1}_{-1} f(x) dx \]
+
+\[ a_o = {1 \over l } \int\limits^{1}_{-1} x^4 dx  = \left[{x^5 \over 5}\]^{1}_{-1} \right] \[
+
+\[ \left[{x^5 \over 5}\right]^{1}_{-1} = \left[(1)^5 \over 5}\right] - \left[(-1)^5 \over 5}\right] \]
+
+}
+
+
+\end{document}

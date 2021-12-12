@@ -1,0 +1,9 @@
+
+n=1000
+X=floor(runif(n,1,7))
+Y=cumsum(X)
+Z=seq(1:n)
+Y/Z
+plot(Y/Z,type="l",col="red",ylim=c(3.25,3.75))
+
+ abline(h=3.5,col="green")

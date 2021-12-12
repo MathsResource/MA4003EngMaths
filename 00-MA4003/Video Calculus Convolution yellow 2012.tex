@@ -1,0 +1,102 @@
+\documentclass{beamer}
+
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+%Slide 1 Title Slide
+\begin{frame}
+\bigskip
+{
+\Huge
+\[ \mbox{Calculus for Engineers}\]
+\[ \mbox{Inverse Laplace Transforms}\]
+}
+{
+\Large
+\[ \mbox{kobriendublin.wordpress.com}\]
+\[ \mbox{Youtube: StatsLabDublin}\]
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Convolution}
+The convolution of $e^t$ with $e^-t$ (also denoted $e^t \ast e^{-t}$)
+
+\begin{itemize}
+\item[1] Determine the Laplace transforms of both terms (find $G_1(s)$ and $G_2(s)$).
+\item[2] Multiply these terms ( find $G_1(s) \times G_2(s)$.
+\item[3] Determine the inverse Laplace transform of that product ( $\mathcal{L}^{-1}$ ($G_1(s) \times G_2(s)) $.
+\end{itemize}
+
+\end{frame}
+%---------------------------------------------------%
+\begin{frame}
+\frametitle{Convolution : Step 1}
+
+Determine the Laplace transform of $e^t$ (using tables)
+\[
+G_1(s) = \mathcal{L}[ e^t ] = \frac{1}{s+1}
+\]
+
+Determine the Laplace transform of $e^t$ (using tables)
+\[
+G_1(s) = \mathcal{L}[ e^{-t} ] = \frac{1}{s-1}
+\]
+(Note: see Formula sheet entry 6)
+\end{frame}
+
+%---------------------------------------------------%
+
+
+\begin{frame}
+\frametitle{Convolution : Step 2}
+\Large
+Multiply the terms $G_1(s)$ and $G_2(s)$
+
+\[ G_1(s)\cdot G_2(s) = \frac{1}{s+1}\times \frac{1}{s-1} \]
+
+\[ G_1(s)\cdot G_2(s) =  \frac{1}{s^2-1}\]
+
+(Note: see next slide for workings)
+\end{frame}
+
+%---------------------------------------------------%
+\begin{frame}
+\frametitle{Convolution : Step 2 (Workings) }
+\LARGE
+
+Using the cross-multiplication technique
+
+\[ \frac{1}{s+1}\times \frac{1}{s-1} = \frac{1}{s+1}\times \frac{1}{s-1} \]
+
+
+\end{frame}
+%---------------------------------------------------%
+
+\begin{frame}
+\frametitle{Convolution : Step 3}
+Find the inverse laplace transform of $G_1(s) \times G_2(s)$
+
+
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Convolution : Step 3}
+\Large
+
+See Formula Sheet Entry 6.
+\[e^t \ast e^{-t} = \mbox{sinh}(t) \]
+
+
+
+\end{frame}
+
+
+%---------------------------------------------------%
+\end{document}

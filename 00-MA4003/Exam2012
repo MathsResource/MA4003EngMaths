@@ -1,0 +1,198 @@
+UNIVERSITY of LIMERICK
+OLLSCOIL LUIMNIGH
+Faculty of Science and Engineering
+Department of Mathematics & Statistics
+END OF SEMESTER ASSESSMENT PAPER
+MODULE CODE: MA4003 SEMESTER: Autumn 2012/13
+MODULE TITLE: Engineering Mathematics 3 DURATION OF EXAMINATION: 2 2 1 hours
+LECTURER: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PERCENTAGE OF TOTAL MARKS: 80 %
+EXTERNAL EXAMINER: Prof. T. Myers
+INSTRUCTIONS TO CANDIDATES: Full marks for correct answers to 5 questions.
+A table of Laplace transforms is attached.MA4003
+1.
+Engineering Mathematics 3
+Autumn 2012/13
+Marks
+(a) Sketch the graphs of the following functions and find their Laplace
+transforms:
+{
+0,
+if t < 5
+(i) f (t) =
+−2(t−5)
+(t − 5)e
+, if t ≥ 5
+{
+sin 4πt, if 0 ≤ t < 2
+(------------------------------------
+
+(ii)) f (t) =
+0,
+otherwise
+
+0,
+if t < 0
+
+
+
+t,
+if 0 ≤ t < 1
+(------------------------------------
+
+(iii) f (t) =
+1,
+if 1 ≤ t < 2
+
+
+
+f (t − 2), if t ≥ 2 3
+(b) Find the inverse Laplace transforms of the following 2,3,3
+(
+e −2s
+(------------------------------------
+
+(ii)) 2
+s + 4s + 3
+2s + 2
+(i) 2
+s + 5s − 6
+2.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(------------------------------------
+
+(iii) ln
+1
+s(s + 2)
+(a) Use Laplace transforms to solve the initial value\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \]\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \][frac{d^2y}{dt^2} ;+; frac{dy}{dt} + y = cos 2t ]
+d 2 y
+− 4y = 12e −t ,
+dt 2
+y(0) = −1,
+2
+3
+)
+10
+dy
+(0) = −2
+dt
+(b) Use Laplace transforms to solve the integral equation
+∫ t
+2
+y(t) = t −
+(t − u)y(u)du
+6
+0
+3.
+(a) Sketch the graph of the following periodic function and find its Fourier
+series
+
+0,
+if −π < x ≤ − π 2
+
+
+
+1,
+if − π 2 < x ≤ 0
+f (x) =
+f (x + 2π) = f (x)
+−1, if 0 < x ≤ π 2
+
+
+
+0,
+if π 2 < x ≤ π
+(b) Hence evaluate the series
+6
+4
+1 −
+1 1 1
++ − + ···
+3 5 7
+(c) The function
+∑ ∞ g : R → R is an odd function of period 2π with Fourier
+series n=1 b n sin(nx). The function h : R → R is defined by
+h(x) = g(x) + K
+where K is a constant. Find the Fourier series of h.
+1
+6MA4003
+4.
+Engineering Mathematics 3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Autumn 2012/13
+Marks
+(a) Determine whether the set of vectors
+   
+ 
+ 
+0
+−1 
+ 1
+S =  2  ,  −2  ,  2 
+
+
+1
+−2
+3
+forms a basis for R 3 .
+6
+(b) Define span (S). What is the dimension of span (S) ? 4
+(c) Is (1, 2, 3) ∈ span (S) ?
+For what value of a is (1, a, 3) T ∈ span (S) ? 6
+T
+5.
+(a) Let P 1 be the space of polynomials of degree at most one. Use the
+Gram-Schmidt process to transform the standard basis {1, x, } for P 1
+to an orthonormal one defined by the inner product
+∫ 0
+< p, q >=
+p(x)q(x) dx
+−1
+8
+−x
+(b) Find the least squares approximation to e over the interval [−1, 0]
+in P 1 using the inner product defined in part (a).
+6. Find the eigenvalues and corresponding eigenspaces of the matrix
+(
+)
+0
+1
+A =
+−2 −3
+8
+8
+
+
+Show that $A$ is diagonalisable over the reals and find the matrix P which di-
+agonalises it. Hence or otherwise solve the system of differential equations
+d
+X = AX,
+dt
+X(0) = (1, 1) T
+8
+7.
+(a) Find the Cholesky decomposition ($A = LL^{T}$ ) of the matrix
+
+
+1 −1 −2
+5 −2 
+A =  −1
+−2 −2
+9 5
+and hence solve the system of equations $Ax = b$ where
+
+
+−1
+b =  −11 
+16 3
+(b) Define the condition number of a square matrix. Of what is it a mea-
+sure ?
+For the matrix A of part (a), use the Cholesky decomposition or oth-
+erwise to calculate its inverse, and then calculate its condition number
+using the maximum row-sum norm.
+2
+2
+6
+6

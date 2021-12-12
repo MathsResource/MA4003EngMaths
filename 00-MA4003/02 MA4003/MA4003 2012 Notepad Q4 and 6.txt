@@ -1,0 +1,72 @@
+1 1 0
+0 0 1
+0 -2 -3
+
+\newpage
+\[a_o + a_1x + a_2x^2 = \alpha_1(1+2x) + \alpha_2(2x+x^2)+\alpha_3(4+2x-3X^2)\]
+
+\[=(\alpha_1+4\alpha_3) + (2\alpha_1 + 2\alpha_2 + 2\alpha_3)x + (\alpha_2-3\alpha_3)x^2\]
+
+\begin{itemize}
+\item $a_o =  \alpha_1+4\alpha_3$
+\item $a_1 = 2\alpha_1 + 2\alpha_2 + 2\alpha_3$
+\item $a_2 = \alpha_2-3\alpha_3$
+\end{itemize}
+
+1 0 4
+2 2 2
+0 1 -3
+
+
+
+
+Characteristic polynomial:
+    x^3 + 2x^2 - x - 2
+
+Real eigenvalues:
+    {-2, -1, 1}
+
+Eigenvector of eigenvalue -2: 
+    (1, -3, 6)
+Eigenvector of eigenvalue -1: 
+    (1, -2, 2)
+Eigenvector of eigenvalue 1: 
+    (1, 0, 0)
+
+All tests OK!
+**********************************************
+1.000  1.000  0.000
+ 0.000  0.000  1.000
+ 0.000 -2.000 -3.000
+
+Eigenvalues Eigenvectors:
+
+Eigenvalues:
+( 1.000, 0.000i)
+(-1.000, 0.000i)
+(-2.000, 0.000i)
+
+Eigenvectors:
+( 1.000, 0.000i) (-0.333, 0.000i) ( 0.147, 0.000i)
+( 0.000, 0.000i) ( 0.667, 0.000i) (-0.442, 0.000i)
+( 0.000, 0.000i) (-0.667, 0.000i) ( 0.885, 0.000i)
+
+**************************************
+
+Input matrix:
+
+ 0.000  2.000 -2.000
+ 2.000 -3.000  4.000
+-2.000  4.000 -5.000
+
+Eigenvalues Eigenvectors:
+
+Eigenvalues:
+(-9.000, 0.000i)
+( 1.000, 0.000i)
+( 0.000, 0.000i)
+
+Eigenvectors:
+( 0.298, 0.000i) (-0.894, 0.000i) (-0.333, 0.000i)
+(-0.596, 0.000i) (-0.447, 0.000i) ( 0.667, 0.000i)
+( 0.745, 0.000i) ( 0.000, 0.000i) ( 0.667, 0.000i)

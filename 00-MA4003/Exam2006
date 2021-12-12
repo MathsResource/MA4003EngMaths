@@ -1,0 +1,199 @@
+UNIVERSITY of LIMERICK
+OLLSCOIL LUIMNIGH
+College of Informatics and Electronics
+END OF SEMESTER ASSESSMENT PAPER
+MODULE CODE: MA4003 SEMESTER: Autumn 2006/07
+MODULE TITLE: Engineering Mathematics 3 DURATION OF EXAMINATION: 2 12 hours
+LECTURER: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PERCENTAGE OF TOTAL MARKS: 80 %
+EXTERNAL EXAMINER: Prof. J. King
+INSTRUCTIONS TO CANDIDATES: Full marks for correct answers to 5 questions.MA4003
+1.
+Engineering Mathematics 3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Autumn 2006/07
+(a) Sketch the following functions and find their Laplace transforms:
+1⁄2
+0,
+if t < 4
+(i) f (t) =
+2
+(t − 4) , if t ≥ 4
+1⁄2
+sin 3πt, if 0 ≤ t < 2
+(------------------------------------
+
+(ii)) f (t) =
+0,
+otherwise
+
+0,
+if t < 0
+
+
+
+1,
+if 0 ≤ t < 1
+(------------------------------------
+
+(iii) f (t) =
+2,
+if 1 ≤ t < 2
+
+
+
+f (t − 2), if t ≥ 2
+(b) Find the inverse Laplace transforms of the following
+(i)
+2.
+s +1
+2
+s − 4s + 3
+(------------------------------------
+
+(ii))
+e −s
+s 2 + 2s + 1
+1⁄2
+where
+y(0) = 0,
+2
+3
+3
+2,3,3
+(------------------------------------
+
+(iii) ln
+s 2
+s 2 + 1
+(a) Use Laplace transforms to solve the initial value\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \]\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \][frac{d^2y}{dt^2} ;+; frac{dy}{dt} + y = cos 2t ]
+d 2 y
+dy
++ 3 + 2y = f (t),
+2
+dt
+dt
+Marks
+10
+dy
+(0) = 0
+dt
+1,
+if 0 ≤ t ≤ 1
+−3(t−1)
+e
+, otherwise
+f (t) =
+(b) Use Laplace transforms to solve the integral equation
+Z t
+(t − u)y(u)du
+y(t) = 1 + t +
+6
+0
+3.
+(a) Find the Fourier series of the periodic function
+1⁄2
+1 + x, if −1 < x ≤ 0
+f (x + 2) = f (x)
+f (x) =
+1 − x, if 0 < x ≤ 1 6
+(b) Hence evaluate the series 4
+1+
+1
+1
+1
++
++
++ ···
+9 25 49
+(c) Use the Fourier series of part (a) to find a particular solution of the
+differential equation
+dy
++ 2y = f (x)
+dx
+where f (x) is as in part (a).
+1
+6MA4003
+Engineering Mathematics 3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Autumn 2006/07
+Marks
+4. Let P 2 be the space of polynomials of degree at most two, i.e.
+P 2 = {p(x) : p(x) = a 0 +a 1 x+a 2 x 2 } where a 0 , a 1 and a 2 are real numbers.
+(a) Determine whether the set of polynomials
+Q = {1 + 2x, 2x + x 2 , 4 + 2x − 3x 2 }
+5.
+forms a basis for P 2 6
+(b) What is dim span (Q) ? 4
+(c) Is −3 + 3x 2 ∈ span (Q) ? 6
+(a) Let P 1 be the space of polynomials of degree at most one. Use the
+Gram-Schmidt process to transform the standard basis {1, x} for P 1
+to an orthonormal one defined by the inner product
+< p, q >=
+5
+X
+p(x i )q(x i )
+i=1
+where x 1 = −2, x 2 = −1, x 3 = 0, x 4 = 1, x 5 = 2.
+8
+(b) Let f be a function on [−2, 2], taking the value f (x i ) at x = x i , i =
+1, 2, 3, 4, 5 as given in the following table
+x i
+-2
+-1
+0
+1
+2
+f (x i )
+-2
+1
+2
+6
+8
+Find the least squares approximation to f in P 1 using the inner product
+defined in part (a).
+6. Find the eigenvalues and corresponding eigenspaces of the matrix
+
+
+0 1 0
+A =  0 0 1 
+2 1 −2
+Is A diagonalisable over the reals ? If so, find the matrix P which diago-
+nalises it. Calculate A 4 .
+2
+8
+8
+8MA4003
+7.
+Engineering Mathematics 3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Autumn 2006/07
+Marks
+(a) Find the Cholesky decomposition ($A = LL^{T}$ ) of the matrix
+
+
+1 −2 3
+A =  −2 5 −6 
+3 −6 10 5
+and hence solve the system of equations $Ax = b$ where
+
+
+−3
+b =  7 
+−10 5
+(b) Define the condition number of a square matrix. Of what is it a mea-
+sure ?
+For the matrix A of part (a) verify that its inverse is given by
+
+
+14 2 −3
+A −1 =  2 1 0 
+−3 0 1
+and calculate its condition number using the maximum
+row-sum norm.
+3
+2
+4

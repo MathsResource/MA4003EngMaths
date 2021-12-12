@@ -1,0 +1,396 @@
+%\documentclass[11pt, a4paper,dalthesis]{report}    % final
+%\documentclass[11pt,a4paper,dalthesis]{report}
+%\documentclass[11pt,a4paper,dalthesis]{book}
+
+\documentclass[11pt,a4paper,titlepage,oneside,openany]{article}
+
+\pagestyle{plain}
+%\renewcommand{\baselinestretch}{1.7}
+
+\usepackage{setspace}
+%\singlespacing
+\onehalfspacing
+%\doublespacing
+%\setstretch{1.1}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multicol}
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{graphicx,psfrag}%\usepackage{hyperref}
+\usepackage[small]{caption}
+\usepackage{subfig}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+\usepackage{varioref} %NB: FIGURE LABELS MUST ALWAYS COME DIRECTLY AFTER CAPTION!!!
+%\newcommand{\vref}{\ref}
+
+\usepackage{index}
+\makeindex
+\newindex{sym}{adx}{and}{Symbol Index}
+%\newcommand{\symindex}{\index[sym]}
+%\newcommand{\symindex}[1]{\index[sym]{#1}\hfill}
+\newcommand{\symindex}[1]{\index[sym]{#1}}
+
+%\usepackage[breaklinks,dvips]{hyperref}%Always put after varioref, or you'll get nested section headings
+%Make sure this is after index package too!
+%\hypersetup{colorlinks=false,breaklinks=true}
+%\hypersetup{colorlinks=false,breaklinks=true,pdfborder={0 0 0.15}}
+
+
+%\usepackage{breakurl}
+
+\graphicspath{{./images/}}
+
+\usepackage[subfigure]{tocloft}%For table of contents
+\setlength{\cftfignumwidth}{3em}
+
+\input{longdiv}
+\usepackage{wrapfig}
+
+
+%\usepackage{index}
+%\makeindex
+%\usepackage{makeidx}
+
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+
+%\usepackage{fullpage}
+
+%Compulsory packages for the PhD in UL:
+%\usepackage{UL Thesis}
+\usepackage{natbib}
+
+%\numberwithin{equation}{section}
+\numberwithin{equation}{section}
+\numberwithin{algorithm}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+%\newcommand{\vec}[1]{\ensuremath{\math{#1}}}
+
+%\linespread{1.6} %for double line spacing
+
+\usepackage{afterpage}%fingers crossed
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defin}{Definition}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+
+%\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mu d}}
+\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mud}}
+
+\newcommand{\bbSigma}{{\mkern+8mu\mathsf{\Sigma}\mkern-9mu{\Sigma}}}
+\newcommand{\thrfor}{{\Rightarrow}}
+
+\newcommand{\mb}{\mathbb}
+\newcommand{\bx}{\vec{x}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+\newcommand{\bdeta}{\boldsymbol{\eta}}
+\newcommand{\bldeta}{\boldsymbol{\eta}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bnu}{\boldsymbol{\nu}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\bdiff}{\boldsymbol{\partial}}
+
+\newcommand{\tomega}{\widetilde{\omega}}
+\newcommand{\tbdeta}{\widetilde{\bdeta}}
+\newcommand{\tbxi}{\widetilde{\bxi}}
+
+
+
+\newcommand{\wv}{\vec{w}}
+
+\newcommand{\ie}{i.e. }
+\newcommand{\eg}{e.g. }
+\newcommand{\etc}{etc}
+
+\newcommand{\viceversa}{vice versa}
+\newcommand{\FT}{\mathcal{F}}
+\newcommand{\IFT}{\mathcal{F}^{-1}}
+%\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\anged}[1]{\langle #1 \rangle}
+\newcommand{\grv}[1]{\grave{#1}}
+\newcommand{\asinh}{\sinh^{-1}}
+
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\morm}[1]{|\det #1 |}
+
+\newcommand{\galpha}{\grv{\alpha}}
+\newcommand{\gbeta}{\grv{\beta}}
+%\newcommand{\rnlessO}{\mb{R}^n \setminus \vec{0}}
+\usepackage{listings}
+
+\interfootnotelinepenalty=10000
+
+\newcommand{\sectionline}{%
+  \nointerlineskip \vspace{\baselineskip}%
+  \hspace{\fill}\rule{0.5\linewidth}{.7pt}\hspace{\fill}%
+  \par\nointerlineskip \vspace{\baselineskip}
+}
+
+\renewcommand{\labelenumii}{\roman{enumii})}
+
+\begin{document}
+
+%----------------------------------------%
+\section*{Question 1 part A i}
+{\large
+
+\[ (u_2(t) -  u_{\infty}(t)) \times [t-2]\]
+$u_{\infty}(t)$=0
+
+\[g(t) \mbox{ in the form }u_a(t)  \times f(t-a) \mbox{i.e. in the form } u_2(t)  \times f(t-2)\]
+
+\begin{itemize}
+\item $f(t-2) = t-2$ therefore $f(t) = t$.
+\item Also $a=2$
+\item We will use Table Entry 17.
+\end{itemize}
+
+
+\[ F(s)= \frac{1}{s^2} \]
+
+
+\[ G(s)  = e^{-as}F(s)= \frac{e^{-2s}}{s^2} \]
+}
+%----------------------------------------%
+\section*{Question 1 part A ii }
+{ \large
+\[ g(t) = \left[u_o(t) -  u_3(t)\right] sin(\pi t)=[1 - u_3(t)] sin (\pi t)\]
+
+\begin{itemize}
+\item We need to re-express $sin (\pi t)$ in form $f(t-3)$
+\item Remark: t = (t-3)+3
+\item $sin (\pi t) = sin (\pi(t-3)+ 3\pi) $
+\item We can use the trigonometric idenity sin(A+B) =sinA cos B + cosA sin B
+\item We will specifically look at sin B and cos B, i.e. sin $(3\pi)$ and cos $(3\pi)$. 
+\item sin $(3\pi)$ = 0 and cos $(3\pi)$ = -1.
+\item Therefore \item $sin (\pi t) = sin (\pi(t-3)+ 3\pi)  = -sin (\pi(t-3) $
+\end{itemize}
+\[ g(t) = sin (\pi t) + u_3(t)sin(\pi(t-3) \]
+\begin{itemize}
+\item The first term is straightforward
+\item The second term is the first term shifted by 3 time units.
+\end{itemize}
+}
+%----------------------------------------%
+\section*{Question 1 part A iii }
+{\large
+The base function B(s)
+
+\[\int^{p}_{0} f(t)e^{-st}dt\]
+
+Can be re-expressed as: 
+\[\int^{1}_{0} 5e^{-st}dt + \int^{2}_{1} 4e^{-st}dt \]
+
+\[5\int^{1}_{0} e^{-st}dt + 4\int^{2}_{1} e^{-st}dt \]
+
+\[\int e^{-st}dt = \frac{e^{-st}}{-s}\]
+
+
+This will give us the Laplace transform of the Base function.%----------------------------------------%
+Another way of solving this:
+
+\[ (u_0(t) -  u_1(t))  \times 5 + (u_1(t) -  u_2(t))  \times 4 = 5u_0(t) -  5u_1(t) + 4u_1(t) -  4u_2(t)\]
+
+\[= 5 u_o(t) -  u_1(t) - 4u_2(t) = 5 -  u_1(t) - 4u_2(t)  \]
+
+The Laplace transform of the Base function is
+\[B(s) = \frac{5}{s}- \frac{e^{-s}}{s} - \frac{4e^{-2s}}{s}  \]
+
+N.B. This is Quadratic in nature 
+\[B(s) = \frac{(4e^{-s}-5)(e^{-s}+1)}{s}  \]
+
+The Laplace transform of the given function is
+\[G(s) = \frac{B(s)}{1-e^{-sp}} = \frac{B(s)}{1-e^{-2s}}  \]
+
+The denominator is quadratic in nature too. ( difference of squares)
+\[G(s) = \frac{(4e^{-s}-5)(e^{-s}+1)}{(s)(1-e^{-s})(1+e^{-s})} =  \frac{4e^{-s}-5}{(s)(1-e^{-s})} \]
+
+Partial Fraction Expansion may help simplify further
+}
+\newpage
+%----------------------------------------%
+\section*{Question 1 part b}
+
+\textbf{Inverse Laplace Transforms : } \\
+Find the inverse Laplace transforms of the following 2,3,3
+
+\subsection*{Question 1 part b i}
+\[\frac{2s-2}{s^2-s-6} = \frac{2s-2}{(s-3)(s+2)} = \frac{2s}{(s-3)(s+2)}-\frac{2}{(s-3)(s+2)}\]
+Using Table Entries 8 and 9, with a=3 and b=-2. solve on the board.
+
+\subsection*{Question 1 part b ii}
+\[\frac{e^{-s}}{s^2 + 4s + 4}= \frac{e^{-s}}{(s+2)^2}  \]
+
+\begin{itemize}
+\item Laplace transform is in form $e{-as} \times F(S)$, with $a =1$
+\item See Table Entry 17 (between Heaviside and Ramp Functions)
+\item First we find the inverse Laplace Transform of F(S).
+\[F(S) = \frac{1}{(s+2)^2}  \]
+\item $F(s)$ is in form
+\[F(S) = k \frac{n!}{(s-a)^{n+1}}  \]
+Necessarily $n=1$, $a=-2$ and $k=1$ k is not necessary and we will drop it.
+\item The inverse laplace transform of F(S) is therefore
+\[ \mathcal{L}^{-1}[F(s)] = t^n e^{at}\]
+\[ f(t) \mathcal{L}^{-1}[\frac{1}{(s+2)^2}] = t e^{-2t}\]
+\item Now to find $g(t)$
+\[g(t) = u_a(t)\times f(t-a)= u_1(t)\times f(t-1) = u_1(t)\times (t-1) e^{-2t-2}\]
+\end{itemize}
+
+\subsection*{Question 1 part b iii}
+\[ G(s) = tan^1(s+2)\]
+\begin{itemize}
+\item Q1 part b iii usually employs table entry 18
+%\[ \mathcal{L}^{-1}[t f(T)] = -F^{\prime}(s)\]
+%\item That is to say ; G(s) is the derivative of something (times -1)
+%\item Recall that
+%\[ \frac{d}{dx}\left( \frac{1}{1+s^2}\right)  = tan^{-1}(x)\]
+%\item
+\end{itemize}
+
+\newpage
+
+\section*{Convolution}
+\textbf{Notation:}
+\[
+\mathcal{L}^{-1} [F(s)] = f(t) \]
+We can compute $ (f * g )(t)$, the convolution of two functions $f(t)$ and $g(t)$, by following these steps:\\
+\bigskip
+%\normalsize
+\begin{itemize}
+\item Get the Laplace transforms of the two component functions : $\mathcal{L}[f(t)] = F(s)$ and $\mathcal{L}[g(t)] = G(s)$
+\item Multiply these two Laplace transforms: $ F(s) \times G(s)$
+\item Find the inverse Laplace transform of the product: $\mathcal{L}^{-1}[F(s) \times G(s)] $
+%\item The inverse Laplace transform is the convolution, which is the result we are looking for.
+\end{itemize}
+\newpage
+\section*{Question 2}
+%----------------------------------------%
+\begin{itemize}
+\item Differential Equations
+\item Integral Equations (using Convolution)
+\end{itemize}
+%----------------------------------------%
+\section*{Question 2 Part A}
+\begin{itemize}
+\item Table Entry 12: $ \mathcal{L}[y^{\prime}(t)]=$ $sY(s)- y(0)$
+\item Table Entry 13: $ \mathcal{L}[y^{\prime\prime}(t)]=$ $s^2Y(s)- sy(0) - y^{\prime}(0)$
+\item Be Mindful of Boundary Conditions. In most past papers, they are zero, but not this year.
+\item $y(0) = 1$ $y^{\prime}(0) = 0$
+
+\[ y^{\prime\prime} +4y = 5e^{-t} \]
+
+\item Finding the Laplace Transform of everything
+\[(s^2Y(s)- s) - (4Y(s)) = \frac{5}{s+1} \]
+
+\item Simplifying the RHS
+\[(s^2-4)Y(s) = \frac{5}{s+1} + s  = \frac{5}{s+1} + \frac{s^2+s}{s+1} = \frac{s^2+s +5}{s+1} \]
+
+\[(s^2-4)Y(s) = \frac{s^2+s +5}{s+1} \]
+
+\[Y(s) = \frac{s^2+s +5}{(s+1)(s-2)(s+2)} \]
+\end{itemize}
+Partial Fraction Expansion to solve
+%----------------------------------------%
+\section*{Question 2 Part B}
+\[ y(t) = sin 3t - 2\int^t_0 cos 3(t-u)y(u)du\]
+\[ y(t) = sin 3t - 2\left[cos(3t)\ast y(t)\right]\]
+Find the Laplace transform for both sides
+\[ Y(s) = \frac{3}{s^2+9} - 2\left[\frac{s}{s^2+9} \times  Y(s)\right]\]
+
+\[ Y(s) = \frac{3-2sY(s)}{s^2+9} \]
+Cross Multiplication
+
+\[ Y(s)(s^2+9) = 3-2sY(s) \]
+
+\[ Y(s)(s^2+2s+9) = 3 \]
+
+\[ Y(s) = \frac{3}{s^2+2s+9} = \frac{3}{(s+1)^2+8} \]
+
+Let us look at this matric is form (see Table Entry 17)
+
+$F(s-a) \mbox{i.e. F(s+1)} \frac{3}{(s+1)^2+8}$
+
+Necessarily \[ F(s) = \frac{3}{s^2+8} \]
+%----------------------------------------%
+
+
+\newpage
+\newpage
+$f(t) = t-2$
+
+
+
+\[u_2(t) -  u_{\infty}(t) \times [t-2]\]
+
+
+%----------------------------------------%
+
+\[u_o(t) -  u_3(t) sin(\pi t)=1 - u_3(t) sin (\pi t)\]
+
+%----------------------------------------%
+
+\[u_0(t) -  u_1(t)  \times 5 + u_1(t) -  u_2(t)  \times 4 = 5u_0(t) -  5u_1(t) + 4u_1(t) -  4u_2(t)\]
+
+\[= 5u_o(t) -  u_1(t) - 4u_2(t)\]
+
+%----------------------------------------%
+\section*{Question 1 part ii}
+
+\textbf{Inverse Laplace Transforms : } \\
+Find the inverse Laplace transforms of the following 2,3,3
+
+$\frac{2s-2}{s^2-s+6}$
+$\frac{e^{-s}}{s^2 + 4s + 4}$
+$ tan^1(s+2)$
+
+
+
+
+\textbf{Notation:}
+\[
+\mathcal{L}^{-1} [F(s)] = f(t) \]
+We can compute $ (f * g )(t)$, the convolution of two functions $f(t)$ and $g(t)$, by following these steps:\\
+\bigskip
+%\normalsize
+\begin{itemize}
+\item Get the Laplace transforms of the two component functions : $\mathcal{L}[f(t)] = F(s)$ and $\mathcal{L}[g(t)] = G(s)$
+\item Multiply these two Laplace transforms: $ F(s) \times G(s)$
+\item Find the inverse Laplace transform of the product: $\mathcal{L}^{-1}[F(s) \times G(s)] $
+%\item The inverse Laplace transform is the convolution, which is the result we are looking for.
+\end{itemize}
+
+\section*{Question 2}
+%----------------------------------------%
+\begin{itemize}
+\item Differential Equations
+\item Integral Equations (using Convolution)
+\end{itemize}
+%----------------------------------------%
+\begin{itemize}
+\item Table Entry 12: $ y^{\prime\prime}(t)$
+\item Table Entry 13: $ y^{\prime\prime}(t)$
+\end{itemize}
+%----------------------------------------%
+
+\[ y(t) = sin 3t - 2\int^t_0 cos 3(t-u)y(u)du\]
+\[ y(t) = sin 3t - 2\left[cos 3\ast y(t)\right]\]
+Find the Laplace transform for both sides
+\[ Y(s) = \frac{3}{s^2+9} - 2\left[\frac{s}{s^2+9} \times  Y(s)\right]\]
+%----------------------------------------%
+\end{document} 

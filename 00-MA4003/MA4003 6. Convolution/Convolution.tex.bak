@@ -1,0 +1,64 @@
+
+
+\documentclass[a4]{beamer}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{newlfont}
+\usepackage{amsmath,amsthm,amsfonts}
+%\usepackage{beamerthemesplit}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{mathptmx}  % Font Family
+\usepackage{helvet}   % Font Family
+\usepackage{color}
+
+\mode<presentation> {
+ \usetheme{Default} % was Frankfurt
+ \useinnertheme{rounded}
+ \useoutertheme{infolines}
+ \usefonttheme{serif}
+ %\usecolortheme{wolverine}
+% \usecolortheme{rose}
+\usefonttheme{structurebold}
+}
+
+\setbeamercovered{dynamic}
+
+\title[MathsCast]{MathsCasts - Dynamic Maths Support) \\ {\normalsize Engineering Maths 3 : Convolution}}
+\author[Kevin O'Brien]{Kevin O'Brien \\ {\scriptsize Kevin.obrien@ul.ie}}
+\date{Summer 2011}
+\institute[Maths \& Stats]{Dept. of Mathematics \& Statistics, \\ University \textit{of} Limerick}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\frame{
+Using Laplace Transforms to compute the Convolution of two functions.
+
+Convolution is a mathematical operation on two functions, creating a third function that can be considered a "blending" of the two component functions.
+It is quite useful in a lot of software and engineering applications, such as image processing.
+}
+\frame{
+We can compute the convolution of two functions $f$ and $g$, which we denote $ f \ast g$ by following these steps.
+
+1) Get the Laplace transforms of the two component functions\\
+2) Multiply these two Laplace transforms\\
+3) Find the inverse Laplace transform of the product\\
+4) The inverse Laplace transform is the convolution, which is the result we are looking for.\\
+}
+
+
+%------------------------------------------------------------------------%
+%Convolution
+\frame{
+The convolution of $e^t$ and $e^{-t}$ (also denoted $e^t \ast e^{-t}$)\\
+
+The convolution of $t$ and $t^{2}$ (also denoted $t \ast t^{2}$)\\
+$\mathcal{L} [ t \ast t^{2} ]  = \mathcal{L} [ t ] \times \mathcal{L} [  t^{2} ]$\\
+$\mathcal{L} [ t ] = {1 \over s^2}$\\
+$\mathcal{L} [ t^2 ] = {2 \over s^3}$\\
+$\mathcal{L} [ t \ast t^{2} ] = {1 \over s^2} \times {2 \over s^3} = {2 \over s^5}$\\
+}
+
+\end{document} 

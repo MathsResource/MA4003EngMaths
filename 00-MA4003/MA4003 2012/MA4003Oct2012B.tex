@@ -1,0 +1,385 @@
+%\documentclass[11pt, a4paper,dalthesis]{report}    % final
+%\documentclass[11pt,a4paper,dalthesis]{report}
+%\documentclass[11pt,a4paper,dalthesis]{book}
+
+\documentclass[11pt,a4paper,titlepage,oneside,openany]{article}
+
+\pagestyle{plain}
+%\renewcommand{\baselinestretch}{1.7}
+
+\usepackage{setspace}
+%\singlespacing
+\onehalfspacing
+%\doublespacing
+%\setstretch{1.1}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multicol}
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{graphicx,psfrag}%\usepackage{hyperref}
+\usepackage[small]{caption}
+\usepackage{subfig}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+\usepackage{varioref} %NB: FIGURE LABELS MUST ALWAYS COME DIRECTLY AFTER CAPTION!!!
+%\newcommand{\vref}{\ref}
+
+\usepackage{index}
+\makeindex
+\newindex{sym}{adx}{and}{Symbol Index}
+%\newcommand{\symindex}{\index[sym]}
+%\newcommand{\symindex}[1]{\index[sym]{#1}\hfill}
+\newcommand{\symindex}[1]{\index[sym]{#1}}
+
+%\usepackage[breaklinks,dvips]{hyperref}%Always put after varioref, or you'll get nested section headings
+%Make sure this is after index package too!
+%\hypersetup{colorlinks=false,breaklinks=true}
+%\hypersetup{colorlinks=false,breaklinks=true,pdfborder={0 0 0.15}}
+
+
+%\usepackage{breakurl}
+
+\graphicspath{{./images/}}
+
+\usepackage[subfigure]{tocloft}%For table of contents
+\setlength{\cftfignumwidth}{3em}
+
+\input{longdiv}
+\usepackage{wrapfig}
+
+
+%\usepackage{index}
+%\makeindex
+%\usepackage{makeidx}
+
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+
+%\usepackage{fullpage}
+
+%Compulsory packages for the PhD in UL:
+%\usepackage{UL Thesis}
+\usepackage{natbib}
+
+%\numberwithin{equation}{section}
+\numberwithin{equation}{section}
+\numberwithin{algorithm}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+%\newcommand{\vec}[1]{\ensuremath{\math{#1}}}
+
+%\linespread{1.6} %for double line spacing
+
+\usepackage{afterpage}%fingers crossed
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defin}{Definition}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+
+%\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mu d}}
+\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mud}}
+
+\newcommand{\bbSigma}{{\mkern+8mu\mathsf{\Sigma}\mkern-9mu{\Sigma}}}
+\newcommand{\thrfor}{{\Rightarrow}}
+
+\newcommand{\mb}{\mathbb}
+\newcommand{\bx}{\vec{x}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+\newcommand{\bdeta}{\boldsymbol{\eta}}
+\newcommand{\bldeta}{\boldsymbol{\eta}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bnu}{\boldsymbol{\nu}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\bdiff}{\boldsymbol{\partial}}
+
+\newcommand{\tomega}{\widetilde{\omega}}
+\newcommand{\tbdeta}{\widetilde{\bdeta}}
+\newcommand{\tbxi}{\widetilde{\bxi}}
+
+
+
+\newcommand{\wv}{\vec{w}}
+
+\newcommand{\ie}{i.e. }
+\newcommand{\eg}{e.g. }
+\newcommand{\etc}{etc}
+
+\newcommand{\viceversa}{vice versa}
+\newcommand{\FT}{\mathcal{F}}
+\newcommand{\IFT}{\mathcal{F}^{-1}}
+%\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\anged}[1]{\langle #1 \rangle}
+\newcommand{\grv}[1]{\grave{#1}}
+\newcommand{\asinh}{\sinh^{-1}}
+
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\morm}[1]{|\det #1 |}
+
+\newcommand{\galpha}{\grv{\alpha}}
+\newcommand{\gbeta}{\grv{\beta}}
+%\newcommand{\rnlessO}{\mb{R}^n \setminus \vec{0}}
+\usepackage{listings}
+
+\interfootnotelinepenalty=10000
+
+\newcommand{\sectionline}{%
+  \nointerlineskip \vspace{\baselineskip}%
+  \hspace{\fill}\rule{0.5\linewidth}{.7pt}\hspace{\fill}%
+  \par\nointerlineskip \vspace{\baselineskip}
+}
+
+\renewcommand{\labelenumii}{\roman{enumii})}
+
+\begin{document}
+
+\subsection*{Q9 2010 Yellow}
+\Large{
+\begin{itemize}
+\item The function f(x) is defined below.
+
+\begin{equation*}
+        f(x)=\begin{cases}
+          -1 &,\qquad \text{if  } -1 \leq x <0 \\
+          1 &,\qquad \text{if  } 0 \leq x <1 \\
+        \end{cases}
+\end{equation*}
+is periodic with period 2.
+\item Range = -1 to 1. $L=1$ $\therefore 1/L = 1$ Also remark : this is an odd function.
+\item We use the following definition: \[ b_n = \frac{1}{L}\int^{L}_{-L} f(x) sin(\frac{n\pi x}{L}) dx \]
+\item \[ b_n = \int^{0}_{-1} (-1) sin(n\pi x) dx + \int^{1}_{0}  sin(n\pi x) dx \]
+
+\item \[ b_n = -1 \times \left[ \frac{-cos(n\pi x)}{n\pi } \right]^{0}_{-1}  +  \left[  \frac{-cos(n\pi x)}{n\pi } \right] ^{1}_{0} \]
+\item \[ b_n =  \left[ \frac{cos(n\pi x)}{n\pi } \right]^{0}_{-1}  +  \left[  \frac{-cos(n\pi x)}{n\pi } \right] ^{1}_{0} \]
+    
+    
+\item Remember $cos(-x) = cos(x) $
+ \[ b_n = \left[ \left( \frac{cos(0)}{n\pi }\right) - \left(\frac{cos(\boldsymbol{n\pi})}{n\pi }\right) \right] + \left[ \left( \frac{-cos(\boldsymbol{n\pi})}{n\pi }\right) - \left(\frac{-cos(0)}{n\pi }\right) \right] \]
+\item $cos(0) = 1$
+\[ b_n = \left[ \left( \frac{1}{n\pi}\right) - \left(\frac{cos(\boldsymbol{n\pi})}{n\pi }\right) \right] + \left[ \left( \frac{-cos(\boldsymbol{n\pi})}{n\pi }\right) - \left(\frac{-1}{n\pi }\right) \right] \]
+\item Simplifying
+\[ b_n =  \left( \frac{2}{n\pi }\right) - \left(\frac{2cos(\boldsymbol{n\pi})}{n\pi }\right)
+=   \frac{2}{n\pi } \left( 1-cos(n\pi)\right) \]
+%\item $cos(n\pi) = (-1)^n$
+%\[ b_3 = \frac{2cos(3\pi)-2}{3\pi} =  \frac{2(-1)^3-2}{3\pi}  =\frac{-4}{3\pi} \]
+\end{itemize}
+}
+
+\newpage
+\subsection*{Q9 2011 Yellow}
+\Large{
+\begin{itemize}
+\item The function f(x) is defined below.
+
+\begin{equation*}
+        f(x)=\begin{cases}
+          1 &,\qquad \text{if} -1 \leq x <0 \\
+          -1 &,\qquad \text{if} 0 \leq x <1 \\
+        \end{cases}
+\end{equation*}
+is periodic with period 2.
+\item Range = -1 to 1. $L=1$ $\therefore 1/L = 1$ Also remark : this is an odd function.
+\item We use the following definition: \[ b_n = \frac{1}{L}\int^{L}_{-L} f(x) sin(\frac{n\pi x}{L}) dx \]
+\item \[ b_n = \int^{0}_{-1} (1) sin(n\pi x) dx + \int^{1}_{0} (-1) sin(n\pi x) dx \]
+\item (We move the (-1) in the second term outside - changing the plus sign to minus)
+%\item \[ b_n = \left[ \frac{cosn(nx)}{n} \right]^{0}_{-1}  - \left[ \frac{cosn(nx)}{n} \right] ^{1}_{0} \]
+
+\item \[ b_n = \left[ \frac{-cos(n\pi x)}{n\pi } \right]^{0}_{-1}  -  \left[  \frac{-cos(n\pi x)}{n\pi } \right] ^{1}_{0} \]
+
+\item \[ b_n = \left[ \left( \frac{-cos(0)}{n\pi }\right) - \left(\frac{-cos(\boldsymbol{n\pi})}{n\pi }\right) \right] - \left[ \left( \frac{-cos(\boldsymbol{n\pi})}{n\pi }\right) - \left(\frac{-cos(0)}{n\pi }\right) \right] \]
+\item $cos(0) = 1$
+\[ b_n = \frac{2cos(n\pi)-2}{n\pi} \]
+\item $cos(n\pi) = (-1)^n$
+\[ b_3 = \frac{2cos(3\pi)-2}{3\pi} =  \frac{2(-1)^3-2}{3\pi}  =\frac{-4}{3\pi} \]
+\end{itemize}
+}
+\newpage
+\subsection*{Q9 2011 Green}
+\begin{itemize}
+\item The function $f(x) = -x$  is defined below.
+
+\item function is periodic with period $2\pi$.
+\item Range = $-\pi$ to $\pi$. $L=\pi$ $\therefore 1/l = 1/\pi$ 
+\item Also remark : this is an odd function.
+\item We use the following definition: \[ b_n = \frac{1}{\pi}\int^{\pi}_{-\pi} f(x) sin(nx) dx \]
+\item Consider problem in following form
+\[b_n = \frac{I}{-\pi}\]
+\item Require integration by parts of integral (divide it later by $-\pi$).
+\[ I =\int u dv = uv - \int vdu \]
+\item Let $u = x$ then $du = dx$
+\item Let $dv = sin(nx)$ then 
+\[ v = \int v dv = \frac{-cos(nx)}{n}  \] 
+\item \[ I = \frac{-xcos(nx)}{n} + \frac{1}{n} \int cos(nx) dx \]
+\item (Comment upon the sign change , and the term (1/n) being removed)
+\item \[ I = \frac{-xcos(nx)}{n} + \frac{1}{n} \times \left(\frac{sin(nx)}{n}\right) \]
+%\item Putting in the limits \[ I = \left[ \frac{-xcos(nx)}{n} \rigth]^{\pi}_{-\pi} \]  % + \left(\frac{sin(nx)}{n^2}\right)^{\pi}_{-\pi} \]
+\item Remark: second term cancels to zero because $sin(n\pi) = sin(-n\pi) = 0 $
+\item Even functions $cos(n\pi) = cos(-n\pi) $
+%\[ I = \left( \frac{-(\pi)cos(n\pi)}{n} \rigth) - \left( \frac{-(-\pi)cos(\textbf{n\pi})}{n} \rigth) \]
+\item \[ I =  \frac{-2\pi cos(n \pi)}{n} \]
+\item \[b_n = \frac{I}{-\pi} =  \frac{2 cos(n \pi)}{n}\]
+\end{itemize}
+
+
+%----------------------------------------%
+\newpage
+\subsection*{Q9 2010 Green}
+\begin{itemize}
+\item The function $f(x) = -x$  is defined below.
+
+\item function is periodic with period $2$.
+\item Range = $-1$ to $1$. $L=1$ $\therefore 1/L = 1$
+\item Also remark : this is an odd function.
+\item We use the following definition: \[ b_n = - \int^{1}_{-1} (x) sin(n\pi x) dx \]
+\item Find the integral I then negate it to find $b_n$.
+\item Require integration by parts of integral (divide it later by $-1$).
+\[ I =\int u dv = uv - \int vdu \]
+\item Let $u = x$ then $du = dx$
+\item Let $dv = sin(n\pi x)$ then
+\[ v = \int v dv = \frac{-cos(n\pi x)}{n\pi }  \]
+
+\item \[ I = \frac{-xcos(n\pi x)}{n\pi } + \frac{1}{n\pi} \int cos(n\pi x) dx \]
+\item (Comment upon the sign change , and the divisor being moved outside)
+\item \[ I = \frac{-xcos(n\pi x)}{n\pi } + \frac{1}{n\pi } \times \left(\frac{sin(n\pi x)}{n\pi }\right) \]
+%\item Putting in the limits \[ I = \left[ \frac{-xcos(nx)}{n} \rigth]^{\pi}_{-\pi} \]  % + \left(\frac{sin(nx)}{n^2}\right)^{\pi}_{-\pi} \]
+\item Remark: once limits are applied second term cancels to zero because $sin(n\pi) = sin(-n\pi) = 0 $
+\item \[ I = \left[ \frac{-xcos(n\pi x)}{n\pi }  \right]^{1}_{-1} \]
+
+\item Even functions $cos(n\pi) = cos(-n\pi) $ \[ I = \left[ \frac{-cos(n\pi)}{n\pi }  \right] - \left[ \frac{-(-1)\boldsymbol{cos(n\pi)}}{n\pi }  \right] \]
+
+
+
+\item 
+%\[ I = \left( \frac{-(\pi)cos(n\pi)}{n} \rigth) - \left( \frac{-(-\pi)cos(\textbf{n\pi})}{n} \rigth) \]
+\item \[ I =  \frac{-2 cos(n \pi)}{n\pi} \]
+\item \[b_n = \frac{2 (-1)^n}{n\pi}\]
+\end{itemize}
+%----------------------------------------%
+\newpage
+\subsection*{Revision}
+\Large{
+
+\begin{eqnarray}
+a_0 &=& \frac{1}{L}\int^{L }_{-L} f(x) dx \\
+a_n &=& \frac{1}{L}\int^{L }_{-L} f(x) cos(\frac{n\pi x}{L}) dx \\
+b_n &=& \frac{1}{L}\int^{L }_{-L} f(x) sin(\frac{n\pi x}{L}) dx
+\end{eqnarray}
+
+\begin{itemize}
+\item \textbf{ ``a for even"}: If function is odd : $a_0 = 0$ and $a_n=0$
+\item \textbf{ ``b for odd"}: If function is even : $b_n=0$
+\end{itemize}
+}
+\subsection*{Q10 2011 Yellow} %Done
+\Large{
+\begin{itemize}
+\item Re-express function \[f(x) = cosh(x) = \frac{e^{x} + e^{-x}}{2} \]
+\item Range = -1 to 1. $L=1$ $\therefore 1/L = 1$ Also remark : this is an even function
+\item \[\int\limits^{1}_{-1} f(x) dx = 2\int\limits^{1}_{0} f(x) dx = 2\int\limits^{1}_{0}\frac{e^{x}}{2} + \frac{e^{-x}}{2} dx \]
+    \item \[ 2\int\limits^{1}_{0}\frac{e^{x}}{2} + \frac{e^{-x}}{2} dx  = 2\times \left[ \frac{e^{x}}{2} - \frac{e^{-x}}{2} \right]^{1}_{0} \]
+\item remark : \[ \frac{e^{x}}{2} - \frac{e^{-x}}{2} = \frac{e^{x} - e^{-x}}{2}= sinh(x )\]
+\item Simplifying
+\[ 2\times \left[ \frac{e^{x}}{2} - \frac{e^{-x}}{2} \right]^{1}_{0}  = 2\times \left[sinh(1) - sinh(0)\right] = 2sinh(1) \]
+\end{itemize}
+}
+\newpage
+\subsection*{Q10 2011 Green}
+\Large{
+\begin{itemize}
+\item Re-express function \[f(x) = |x|  \]
+\item Range = -1 to 1. $L=1$ ($\therefore 1/L = 1$) Also remark : this is an even function.
+\item \[\int\limits^{1}_{-1} f(x) dx = \int\limits^{0}_{-1} (-x) dx + \int\limits^{1}_{0} (x) dx \]
+\item \[\int\limits^{1}_{-1} f(x) dx = 2\int\limits^{1}_{0} f(x) dx = 2 \times \int\limits^{1}_{0} (x) dx \]
+
+\item \[ 2 \times \int\limits^{1}_{0} x dx = 2 \times \left[ \frac{x^2}{2} \right]^{1}_{0} =
+2 \times \left[ \frac{1^2}{2} - \frac{0}{2} \right]  = 1 \]
+\end{itemize}
+}
+
+\subsection*{Q10 2010 Green}
+\Large{
+\begin{itemize}
+\item Re-express function \[f(x) = xcos(x)  \]
+\item This is an \textbf{ODD} function. $a_0$ is necessarily 0.
+\item You can check this by trying out some trial values
+\begin{itemize}
+\item[*] $f(-\pi) = -\pi \times (-1) = \pi$
+\item[*] $f(\pi) = \pi \times (-1) = -\pi$
+\end{itemize}
+\end{itemize}
+}
+
+
+\subsection*{Q10 2010 Green}
+\Large{
+\begin{itemize}
+\item Re-express function \[f(x) = -x^3  \]
+\item This is an \textbf{ODD} function. $a_0$ is necessarily 0.
+\item Lets do it out just to make sure.
+\item Range = -1 to 1. $L=1$ ($\therefore 1/L = 1$ )
+\item \[\int\limits^{1}_{-1} f(x) dx =\int\limits^{1}_{-1}-x^3 dx = \left[\frac{-x^4}{4} \right]^{1}_{-1}  = \left[\left(- \frac{1}{4} \right) - \left(- \frac{1}{4} \right) \right]  = 0\]
+\item Remark: Be VERY Careful with signs
+\end{itemize}
+}
+\section*{Question 7}
+
+\begin{itemize}
+\item The period of a function $p$ may be identified by the following term : $f(t) = f(t+p)$
+\item Period of a function is inversely proportional to the coefficient.
+\item If $f(x)$ has period $p$ , then $f(2x)$ has period $p/2$
+\item For older questions a periodic trigonometric function of form $trig(kx)$ has period $2\pi/k$
+\end{itemize}
+%----------------------------------------%
+\subsection*{Q7 2011 Yellow}
+\begin{itemize}
+\item If $f(x)$ has period $2$ , then $f(2x)$ has period $1$
+\end{itemize}
+%----------------------------------------%
+\subsection*{Q7 2011 Green}
+\begin{itemize}
+\item If $f(x)$ has period $2\pi$ , then $f(2x)$ has period $\pi$
+\end{itemize}
+%----------------------------------------%
+\subsection*{Q7 2010 Yellow}
+\begin{itemize}
+\item  $trig(kx)$ $k$= ${pi\over 2}$
+\item  $p$ = $\frac{2\pi}{pi / 2}$ =4
+\end{itemize}
+%----------------------------------------%
+\subsection*{Q7 2010 Green}
+\begin{itemize}
+\item  $trig(kx)$ $k$= ${1\over2}$
+\item  $p$ = $\frac{2\pi}{1/2}$ = $4\pi$
+\end{itemize}
+%----------------------------------------%
+\newpage
+\subsection{Q8 2010 Green}
+\begin{itemize}
+\item $f(x) = x - x^5$
+\item $f(-1) = (-1) - (-1)^5$ = 0
+\item $f(1) = (1) - (1)^5$ = 0
+\item use a different number instead
+\item $f(-1/2) = (-1/2) - (-1/2)^5$ = 0
+\item $f(1/2) = (1/2) - (1/2)^5$ = 0
+\item $f(x)$ is odd
+
+\item $g(x) = x^2 sin x$
+\item $g(-1) = (-1^2) \times sin(-1)$
+\item $g(1) = (1^2) \times sin(-1)$
+\item $g(x)$ is also odd
+\end{itemize}
+%----------------------------------------%
+\end{document} 

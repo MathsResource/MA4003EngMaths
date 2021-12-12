@@ -1,0 +1,93 @@
+\begin{displaymath}
+F(s) = \frac{s-1}{S^2+3s+2} 
+\end{displaymath}
+\begin{displaymath}
+\frac{s-1}{S^2+3s+2} = \frac{-2}{s+1}+\frac{3}{s+2}
+\end{displaymath}
+\begin{displaymath}
+f(t) = -2e^{-t} + 3e^{-2t}
+\end{displaymath}
+
+
+\begin{displaymath}
+y^{\prime\prime} + 3y^{\prime} + 2y = t
+\end{displaymath}
+\begin{displaymath}
+y(0) = 0 \quad y^{\prime}(0) = 0 
+\end{displaymath}
+
+\begin{displaymath}
+\mathcal{L}[y^{\prime\prime}] = s^2.Y(s) - s.y(0) - y^{\prime}(0) = s^2.Y(s)
+\end{displaymath}
+\begin{displaymath}
+\mathcal{L}[3y^{\prime}] = 3[s.Y(s) - y(0)] = 3s.Y(s)
+\end{displaymath}
+\begin{displaymath}
+\mathcal{L}[2y] = 2.Y(s)
+\end{displaymath}
+
+\begin{displaymath}
+\mbox{LHS: }Y(s)[ s^2 + 3s +2 ]
+\end{displaymath}
+\begin{displaymath}
+\mbox{RHS: }\mathcal{L}[t]=\frac{1}{s^2}
+\end{displaymath}
+
+\begin{displaymath}
+\mbox{letting LHS = RHS}
+\end{displaymath}
+\begin{displaymath}
+Y(s)[ s^2 + 3s +2 ] = \frac{1}{s^2}
+\end{displaymath}
+\begin{displaymath}
+Y(s) = \frac{1}{(s^2)(s+1)(s+2)}
+\end{displaymath}
+
+\begin{displaymath}
+\frac{1}{(s^2)(s+1)(s+2)} =\frac{A}{s^2} + \frac{B}{s+1} + \frac{C}{s+2}
+\end{displaymath}
+\begin{displaymath}
+\mbox{solving: } A = 1/2 \quad B = 1 \quad c=-1/4
+\end{displaymath}
+
+\begin{displaymath}
+Y(s) =\frac{1/2}{s^2} + \frac{1}{s+1} + \frac{-1/4}{s+2}
+\end{displaymath}
+\begin{displaymath}
+y(t) =\frac{t}{2} + e^{-t}  - 1/4e^{-2t}
+\end{displaymath}
+
+
+\begin{displaymath}
+y(t) = sin(t) + 2[cos(t)*y(t)]
+\end{displaymath}
+\begin{displaymath}
+Y(s) = \frac{1}{s^2 + 1} +\frac{2s.Y(s)}{s^2+1}
+\end{displaymath}
+\begin{displaymath}
+Y(s) [s^2 + 1]= 1 + 2s.Y(s)
+\end{displaymath}
+\begin{displaymath}
+Y(s) [s^2 - 2s + 1]= 1 
+\end{displaymath}
+\begin{displaymath}
+Y(s). (s-1)^2 = 1 
+\end{displaymath}
+\begin{displaymath}
+Y(s) = \frac{1}{(s-1)^2} 
+\end{displaymath}
+\begin{displaymath}
+y(t) = te^{t}
+\end{displaymath}
+
+\begin{displaymath}
+f(x) =  \{ \begin{matrix}  -x \mbox{    if } -\pi < x \le 0 \\  x \mbox{ if } 0 < x \le \pi \end{matrix}
+\end{displaymath}
+\begin{displaymath}
+f(x +2\pi) = f(x)  
+\end{displaymath}
+
+
+\begin{displaymath}
+y^{\prime} + y = f(x)
+\end{displaymath}

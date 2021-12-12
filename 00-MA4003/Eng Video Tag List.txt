@@ -1,0 +1,12 @@
+octave tutorial,
+octave matrix,
+octave linear algebra,	
+octave matrices,
+transpose of matrix using octave,	
+how to use linear algebra on octave,
+matrices en octave,
+gnu octave,
+matrices octave,
+numerical linear algebra,	
+matrices in octave,	
+

@@ -1,0 +1,186 @@
+UNIVERSITY of LIMERICK
+OLLSCOIL LUIMNIGH
+College of Informatics and Electronics
+END OF SEMESTER ASSESSMENT PAPER
+MODULE CODE: MA4003 SEMESTER: Autumn 2005/06
+MODULE TITLE: Engineering Mathematics 3 DURATION OF EXAMINATION:
+LECTURER: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PERCENTAGE OF TOTAL MARKS: 80 %
+
+hours
+EXTERNAL EXAMINER: Prof. J. King
+INSTRUCTIONS TO CANDIDATES: Full marks for correct answers to 5 questions.MA4003 Engineering Mathematics 3
+1.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Autumn 2005/06
+(a) Sketch the following functions and find their Laplace transforms:
+if 
+if 
+#
+if
+$&%
+(------------------------------------
+
+(ii)) 
+otherwise
+#
+if " ,
+&
+* -/
+& if + 
+(------------------------------------
+
+(iii) (
+otherwise
+(b) Find the inverse Laplace transforms of the following
+
+(i)
+102
+2.
+ 
+!
+5
+4
+4 354
+10602
+
+3
+3
+2,3,3
+10606029
+2
+(a) Use Laplace transforms to solve the initial value\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \]\[\frac{d^2y}{dt^2} \;+\; \frac{dy}{dt} + y = \cos 2t \][frac{d^2y}{dt^2} ;+; frac{dy}{dt} + y = cos 2t ]
+< 
+-
+ 
+where
+=
+:
+ =
+
+#
+if
+otherwise
+=>
+@?
+
+
+6
+CB ; B :
+
+(a) Find the Fourier series of the periodic function
+DE
+if
+if
+
+FGD
+@
+6
+
+H=, DE
+(b) Hence evaluate the alternating series
+.
+4
+JKJKJ
+(c) Use the Fourier series of part (a) to find a particular solution of the
+differential equation
+ <
+where
+4.
+DE
+10
+(b) Use Laplace transforms to solve the integral equation
+3.
+Marks
+6
+ DE
+is as in part (a).
+be the space of polynomials of degree at most two, i.e.
+XW
+ NMPOQDESRTOQDE!VU A U  D U  D where U A U  and U  are real
+numbers. Determine whether the set of polynomials
+Y+ D $ $&D D
+forms a basis for
+(a) Let
+1
+8MA4003 Engineering Mathematics 3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Autumn 2005/06
+(b) Find bases for the row space and column space, and hence the rank, of
+the matrix
+5.
+
+(a) Let L  be the space of polynomials of degree at most two. Use
+W the
+Gram-Schmidt process to transform the standard basis MY+ D
+for
+to an orthonormal one defined by the inner product
+
+QD  D
+where D 
+ + D  ,$ D  .
+
+(b) Let be a function on
+, taking
+the value
+as given in the following table
+D
+at
+>
+10
+/
+D
+0
+1
+2
+3
+3
+2
+5
+4
+in
+Find the least squares approximation to
+defined in part (a).
+using the inner product
+6
+6. Find the eigenvalues and corresponding eigenspaces of the matrix
+(a) Find the Cholesky decomposition (
+
+
+
+# 
+which diago-
+ ) of the matrix
+and hence solve the system of equations
+8
+Is diagonalisable over the reals ? If so, find  the matrix
+nalises it. Use the diagonalisation to calculate .
+7.
+8
+  
+Marks
+8
+4
+ 
+H
+where
+4
+(b) Using
+the factorisation
+found in part ; (a), solve
+P P the sys-
+"!$
+tems
+ + $ where
+
+ and
+P
+#  of equations
+ +  & to obtain an estimate
+for
+('  '(' and hence estimate
+the condition number of the matrix .
+2
+8

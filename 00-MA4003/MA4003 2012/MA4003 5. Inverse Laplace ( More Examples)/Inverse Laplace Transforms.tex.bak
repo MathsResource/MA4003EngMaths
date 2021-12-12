@@ -1,0 +1,26 @@
+% Inverse Laplace Transforms
+
+
+
+
+Compute the inverse laplace transform of  \frac{s}{s^2-2s+1}
+\mathcal{L}^{-1} [ {s \over (s-a)(s-b)}] =
+We can't use this formula.
+Factorize the denominator:
+\frac{s}{s^2-2s+1} = \frac{s}{(s-1)^2}
+\frac{s}{(s-1)^2} = \frac{(s-1) +1 }{(s-1)^2} = \frac{s-1 }{(s-1)^2} + \frac{1 }{(s-1)^2}
+
+Try a different approach
+
+f(t)  = (1+t)e^t
+%------------------------------------------------------------------------%
+\frac{s-2}{s^2+5s+6} = \frac{s-2}{(s+2)(s+3)}
+Split this into two terms
+\frac{s-2}{(s+5)(s+6)} = \frac{s}{(s+2)(s+3)} - \frac{2}{(s+2)(s+3)}
+Get the inverse Laplace transfrom of each term
+\frac{s}{(s+5)(s+6)} :
+a = -2
+b = -3
+a-b = (-2)-(-3) = 1
+\frac{a \over a-b} ={-2 \over 1}
+\frac{b \over a-b} ={-3 \over 1}

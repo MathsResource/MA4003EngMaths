@@ -1,0 +1,25 @@
+
+
+  
+\[ \frac{s+1}{s^2 \;+\; 2s  \;+\; 3} \]
+
+
+If you have a quatratic expression, see if you can factorize it.
+
+\[ s^2  + (a+b)s + ab = (s+a) \times (s+b)\]
+
+In some cases, an expression may simpling very quickly
+
+
+\[ \frac{s+a}{s^2  + (a+b)s + ab} = \frac{s+a}{(s+a)(s+b)} = \frac{1}{s+b}\]
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\[ \frac{e^{-s}}{s^2}
+

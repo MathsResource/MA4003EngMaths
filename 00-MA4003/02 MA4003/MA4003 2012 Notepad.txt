@@ -1,0 +1,200 @@
+
+%----------------------------------------%
+\section*{Question 3}
+
+\begin{itemize}
+\item Fourier Series
+\item Differential Equation
+\end{itemize}
+%----------------------------------------%
+\begin{eqnarray}
+a_0 &=& \frac{1}{L}\int^{L }_{-L} f(x) dx \\
+a_n &=& \frac{1}{L}\int^{L }_{-L} f(x) cos(\frac{n\pi x}{L}) dx \\
+b_n &=& \frac{1}{L}\int^{L }_{-L} f(x) sin(\frac{n\pi x}{L}) dx
+\end{eqnarray}
+
+\begin{itemize}
+\item \textbf{ ``a for even"}: If function is odd : $a_0 = 0$ and $a_n=0$
+\item \textbf{ ``b for odd"}: If function is even : $b_n=0$
+\end{itemize}
+
+\[ I_2 =  \int^{pi}_{-pi} f(x)cos(nx) dx \]
+This integral can be simplifies as follows ( on acccount of the fact that it is even)
+
+\[ I_2 =  2 \times \int^{pi}_{0} f(x)cos(nx) dx \]
+
+\[ I_2 =  2 \times \left( \int^{pi/2}_{0} 0 \times cos(nx) dx + \int^{pi}_{pi/2} 1 \times cos(nx) dx \right) \]
+
+\[ I_2 =  2 \times  \int^{\pi}_{\pi/2}  cos(nx) dx  \]
+
+\[ I_2 =  2 \left[  \frac{-sin(nx)}{n} \right]^{\pi}_{\pi/2}   \]
+
+\[ I_2 =  2 \left[  \frac{-sin(n\pi)}{n} - \frac{-sin(n\pi/2)}{n} \right]   \]
+
+$sin(n\pi) = 0$
+
+
+\[ I_2 =  \frac{2sin(n\pi/2)}{n}   \]
+
+\newpage
+\subsection*{Evaluation of a series}
+Hence evaluate the series \[1 - \frac{1}{3} + \frac{1}{5} + \frac{1}{7} + \ldots \]
+\subsection*{Differential equation}
+Use the Fourier series of part (a) to find a particular solution of the
+differential equation
+
+%--------------------------------------------------------%
+\begin{itemize}
+\item Spanning Sets
+\item Determinant of a Matrix
+\end{itemize}
+
+\[  Q = \{1 + 2x, 2x + x^2, 4 + 2x-3x^2 \}\]
+%----------------------------------------%
+We must compute the determinant of the following matrix.
+\[
+\left(
+  \begin{array}{ccc}
+    0 & 1 & 3 \\
+    1 & 3 & 1  \\
+    2 & 4 & 1  \\
+  \end{array}
+\right)
+\]
+
+%----------------------------------------%
+\begin{itemize}
+\item Define span (Q).
+\item What is the dimension of span (Q) ?
+\end{itemize}
+
+
+\section*{Question 5: Gram Schmidt Process}
+
+Let $P_1$ be the space of polynomials of degree at most one. Use the
+Gram-Schmidt process to transform the standard basis $\{ 1,x \}$ for $P_1$
+to an orthonormal one defined by the inner product
+
+\begin{itemiz3e}
+\item $P_1$ : polynomials of degree at most one - any expression that can be written in the form $a+bx$ where $a,b$ are real numbers.
+\item (Remark: A counter example $P_2$ : polynomials of degree at most two - any expression that can be written in the form $a+bx+cx^2$ where $a,b,c$ are real numbers.)
+\end{itemize}
+
+
+\begin{tabular}{|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  x & f(x) \\\hline
+  0 & 1 \\
+  1 & 1 \\
+  2 & 1 \\
+  3 & 1 \\
+  4 & 1 \\
+  \hline
+\end{tabular}
+\section*{Question 6}
+Eigen Values, Eigen Vectors and Eigenspaces
+
+
+%--------------------------------------------------%
+\section*{Question 6}
+\[
+A = \left(
+  \begin{array}{ccc}
+ 0&  1&  0\\
+ 0&  0&  1\\
+ 0&  2& -1\\
+  \end{array}
+\right)
+\]
+
+The eigenvalues are the solution to the following equation \[ \mbox{DET}(A-I\lambda) = 0 \].
+Equivalently: $ \mbox{DET}(I\lambda-A) = 0 $
+\[
+\left|
+  \begin{array}{ccc}
+    0-\lambda & 1 & 0  \\
+    0 & 0-\lambda & 1  \\
+    0 & 2 & -1-\lambda  \\
+  \end{array}
+\right|
+\]
+Computing the determinant
+\begin{itemize}
+\item Pick a row or column (preferably one with lots of zeroes)
+\item For each element in the row (or column) compute the
+\item
+\end{itemize}
+
+
+Show that A is diagonalizable over the reals and find the matrix P which diagonalises it. Hence or otherwise solve the system of differential equations
+\newpage
+
+
+%-----------------------------------------------------------------%
+\section*{Question 6}
+Eigen Values, Eigen Vectors and Eigenspaces
+\[
+\left|
+  \begin{array}{ccc}
+    0-\lambda & 1 & 3  \\
+    1 & 3-\lambda & 1  \\
+    2 & 4 & 1-\lambda  \\
+  \end{array}
+\right|
+\]
+Show that A is diagonalizable over the reals and find the matrix P which diagonalises it. Hence or otherwise solve the system of differential equations
+\newpage
+
+\section*{Question 7}
+\large{
+\begin{itemize}
+\item Solving a system of Linear Equations
+\item LU decomposition of a matrix
+\end{itemize}
+%----------------------------------------%
+LU decomposition
+\[
+\left(
+  \begin{array}{ccc}
+ 1.000& -3.000&  1.000\\
+ 2.000& -5.000&  4.000\\
+ 2.000& -2.000& 11.000\\
+  \end{array}
+\right)
+\]
+%----------------------------------------%
+Question 7 L matrix
+\[
+\left(
+  \begin{array}{ccc}
+ 1.000&  0.000&  0.000\\
+ 1.000&  1.000&  0.000\\
+ 0.500& -0.167&  1.000\\
+  \end{array}
+\right)
+\]
+
+%----------------------------------------%
+Question 7 U matrix
+\[
+\left(
+  \begin{array}{ccc}
+ 2.000 &-5.000 & 4.000\\
+ 0.000 & 3.000 &7.000\\
+ 0.000 & 0.000 &0.167\\
+  \end{array}
+\right)
+\]
+
+\newpage
+Define the condition number of a square matrix. Of what is it a measure ?
+For the matrix A of part (a), use the LU decomposition or otherwise
+to calculate its inverse, and then calculate its condition number using
+the maximum row-sum norm.
+
+
+%------------------------------------------------%
+
+%------------------------------------------------%
+
